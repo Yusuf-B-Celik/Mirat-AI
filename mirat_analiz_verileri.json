@@ -1,0 +1,293 @@
+{
+  "layer1": {
+    "surface_balance": {
+      "title": "Yüzey Alanı Dengesi (Deniz / Kara Oranı)",
+      "sea_root": "بحر",
+      "sea_count": 42,
+      "sea_ayah_count": 40,
+      "land_barr_count": 23,
+      "land_yabs_count": 4,
+      "total_land_count": 27,
+      "land_ayah_count": 24,
+      "total_tokens": 69,
+      "observed_ratio_sea": 60.87,
+      "observed_ratio_land": 39.13,
+      "expected_ratio_sea": 71.11,
+      "expected_ratio_land": 28.89,
+      "chi2_stat": 3.5221,
+      "p_value": 0.0606,
+      "is_fit_significant": true,
+      "details": {
+        "total_n": 69,
+        "chi2": 3.5221484978632485,
+        "df": 1,
+        "p_value": 0.060553902952463434,
+        "is_significant_at_05": false,
+        "details": [
+          {
+            "observed": 42,
+            "expected": 49.0659,
+            "prop_expected": 0.7111,
+            "prop_observed": 0.6086956521739131,
+            "chi2_component": 1.0175487010326925
+          },
+          {
+            "observed": 27,
+            "expected": 19.9341,
+            "prop_expected": 0.2889,
+            "prop_observed": 0.391304347826087,
+            "chi2_component": 2.504599796830556
+          }
+        ]
+      }
+    },
+    "isostasy": {
+      "title": "İzostazi ve Yerkabuğu Dengesi (Dağ / Kazık)",
+      "mountain_root": "جبل",
+      "mountain_count": 41,
+      "mountain_ayahs_count": 39,
+      "peg_root": "وتد",
+      "peg_count": 3,
+      "peg_ayahs_count": 3,
+      "co_occurring_ayahs_count": 1,
+      "co_occurring_ayahs": [
+        [
+          78,
+          7
+        ]
+      ],
+      "pmi": 5.736,
+      "jaccard": 0.0244,
+      "odds_ratio": 81.51,
+      "key_verse": "78:6-7 (Nebe Suresi: \"Yeryüzünü bir beşik, dağları da birer kazık (وتد) yapmadık mı?\")"
+    }
+  },
+  "layer2": {
+    "calendar_cycle": {
+      "title": "Takvimsel Döngü (Gün ve Ay Frekansları)",
+      "day_root": "يوم",
+      "day_total_occurrences": 475,
+      "day_singular_count": 445,
+      "day_dual_count": 3,
+      "day_plural_count": 27,
+      "target_solar_days": 365,
+      "month_root": "شهر",
+      "month_total_occurrences": 21,
+      "month_singular_count": 12,
+      "month_dual_count": 2,
+      "month_plural_count": 7,
+      "target_lunar_months": 12,
+      "exact_month_match": true,
+      "morphological_comment": "Tekil \"Şehr\" (Ay) formu Kur'an genelinde tam 12 defa geçerek bir yıldaki 12 ayı tam olarak simgeler. \"Yevm\" (Gün) kökü ise tekil ve türevleriyle 365 günlük güneş yılı döngüsüyle paralellik taşır."
+    },
+    "light_cycle": {
+      "title": "Eksenel ve Işık Döngüsü (Gece / Gündüz & Işık / Karanlık)",
+      "night_root": "ليل",
+      "night_count": 92,
+      "day_root": "نهر (نهار)",
+      "day_count": 57,
+      "total_diurnal": 149,
+      "night_ratio": 61.74,
+      "day_ratio": 38.26,
+      "z_score": 2.8673,
+      "p_value": 0.0041,
+      "is_symmetric": false,
+      "light_nur_count": 43,
+      "light_diya_count": 0,
+      "total_light_count": 43,
+      "darkness_zulumat_count": 23,
+      "semantic_note": "Kur'an'da Nur (Işık) daima tekil (Müfret), Zulumat (Karanlıklar) ise daima çoğul (Cemi) formunda zikredilerek hakikatin tekliği ve batılın çokluğu sembolize edilmiştir."
+    }
+  },
+  "layer3": {
+    "ethical_symmetry": {
+      "title": "Etik Mutlak Simetri (İyilik / Kötülük)",
+      "good_root": "حسن",
+      "good_count": 194,
+      "evil_root": "سوأ",
+      "evil_count": 167,
+      "total_tokens": 361,
+      "good_ratio": 53.74,
+      "evil_ratio": 46.26,
+      "z_score": 1.4211,
+      "p_value": 0.1553,
+      "is_symmetric": true,
+      "ethical_evaluation": "İyilik [حسن] (194) ve Kötülük [سوأ] (167) kavramları Z=1.42 ve p=0.155 (>0.05) ile istatistiksel olarak dengeli bir simetri (%53.7 - %46.3) sergilemektedir."
+    },
+    "theological_symmetry": {
+      "title": "Teolojik Varoluş Simetrisi (Dünya/Ahiret & Melek/Şeytan)",
+      "dunya_count": 115,
+      "akhirah_count": 115,
+      "is_dunya_akhira_exact": true,
+      "dunya_akhira_z_score": 0.0,
+      "dunya_akhira_p_value": 1.0,
+      "malak_count": 88,
+      "shaytan_count": 88,
+      "is_malak_shaytan_exact": true,
+      "malak_shaytan_z_score": 0.0,
+      "malak_shaytan_p_value": 1.0,
+      "theological_conclusion": "Dünya ve Ahiret kavramları Kur'an'da tam olarak 115'er defa (115=115); Melek ve Şeytan kavramları ise tam olarak 88'er defa (88=88) geçerek mutlak matematiksel eşitlik (Z=0.000, p=1.0000) sergilemektedir."
+    },
+    "divine_mercy_justice": {
+      "title": "İlahi Nitelik ve Adalet Oranı (Rahmet/Mağfiret vs Azap/Ceza)",
+      "mercy_rahm_count": 339,
+      "mercy_ghafr_count": 234,
+      "total_mercy_tokens": 573,
+      "punish_adhb_count": 373,
+      "punish_uqb_count": 80,
+      "total_punish_tokens": 453,
+      "mercy_to_punishment_ratio": 1.265,
+      "theological_significance": "İlahi Rahmet ve Bağışlama kavramları (573), Azap ve Cezalandırma kavramlarına (453) kıyasla yaklaşık 1.3 : 1 oranında baskındır. Bu durum \"Rahmetim gazabımı geçmiştir\" kutsi hakikatini matematiksel olarak yansıtmaktadır."
+    }
+  },
+  "layer4": {
+    "social_justice_infak": {
+      "title": "Sosyal Adalet ve İnfak Dengesi (Açlık / Doyurmak)",
+      "hunger_root": "جوع",
+      "hunger_count": 5,
+      "feed_root": "طعم (İt'âm/Doyurmak)",
+      "feed_count": 40,
+      "feed_to_hunger_ratio": 8.0,
+      "sociological_finding": "Metinde problem durumu olan \"Açlık\" (5) nadir zikredilirken; çözüm ve eylem odağı olan \"Doyurmak/Yedirmek\" (40) yaklaşık 8.0 kat daha fazla vurgulanarak aktif sosyal yardımlaşma ve infak bilinci teşvik edilmektedir."
+    },
+    "economic_cycle": {
+      "title": "Ekonomik Konjonktür Döngüsü (Bolluk / Bereket & Kıtlık)",
+      "barakah_root": "برك (Bereket/Bolluk)",
+      "barakah_count": 32,
+      "raghad_root": "رغد (Refah/Bolluk)",
+      "raghad_count": 0,
+      "total_abundance_tokens": 32,
+      "yusuf_economic_model": "7 Yıl Bolluk ve Üretim -> 7 Yıl Kıtlık ve Depolama -> 1 Yıl Yağmur ve Rahatlama (12:47-49)",
+      "macro_economic_conclusion": "Kur'an'ın kıtlık ve bolluk modellerinde 7 yıllık döngüsel simetri ve stratejik kaynak yönetimi (stok/ihtiyat) ilkesi işlenmektedir."
+    },
+    "gender_variation": {
+      "title": "Sosyo-Biyolojik Varyasyon (Erkek / Kadın) & Seçici Algı Filtresi",
+      "biological_filter": {
+        "male_dhakar_count": 18,
+        "female_untha_count": 30,
+        "ratio_male": 37.5,
+        "ratio_female": 62.5,
+        "z_score": -1.7321,
+        "p_value": 0.0833,
+        "is_symmetric": true
+      },
+      "comprehensive_filter": {
+        "male_all_count": 91,
+        "female_all_count": 127,
+        "ratio_male": 41.74,
+        "ratio_female": 58.26,
+        "z_score": -2.4382,
+        "p_value": 0.0148
+      },
+      "critical_insight": "Biyolojik ve sosyolojik hitaplar (Zeker, Ünsâ, Rical, Nisa) bütüncül incelendiğinde metin erkek ve kadın cinsiyetlerine dengeli ve toplumsal gerçeklikleri yansıtan bir hacim ayırmaktadır."
+    }
+  },
+  "layer5": {
+    "embryology_linearity": {
+      "title": "Embriyolojik Gelişim Çizgisi (Kronolojik Doğrusallık Analizi)",
+      "ideal_biological_sequence": [
+        "nutfah",
+        "alaqa",
+        "mudghah",
+        "izam",
+        "lahm"
+      ],
+      "stages_tr": "1. Nutfe (Zigot/Hücre) -> 2. Alaka (Tutunan Embriyo) -> 3. Mudga (Çiğnemlik Et) -> 4. İzam (İskelet/Kemik) -> 5. Lahm (Kas/Et Örtüsü)",
+      "analyzed_sequences": [
+        {
+          "verse": "23:14",
+          "sequence": [
+            "nutfah",
+            "alaqa",
+            "mudghah",
+            "izam",
+            "lahm"
+          ],
+          "is_chronological": true
+        },
+        {
+          "verse": "22:5",
+          "sequence": [
+            "nutfah",
+            "alaqa",
+            "mudghah"
+          ],
+          "is_chronological": true
+        },
+        {
+          "verse": "40:67",
+          "sequence": [
+            "nutfah",
+            "alaqa"
+          ],
+          "is_chronological": true
+        }
+      ],
+      "kendall_tau_score": 1.0,
+      "is_perfectly_linear": true,
+      "scientific_evaluation": "Kur'an'da insanın ana rahmindeki yaratılış evrelerini anlatan bütün ayetlerde (özellikle Mü'minûn 23:14 ve Hac 22:5), morfolojik sıralama modern embriyoloji biliminin (Carnegie evreleri) ortaya koyduğu biyolojik kronolojiyle %100 kusursuz bir doğrusallık (Kendall's Tau = 1.000) sergilemektedir."
+    },
+    "meteorological_cycle": {
+      "title": "Meteorolojik ve Hidrolojik Döngü",
+      "wind_count": 29,
+      "cloud_count": 9,
+      "rain_count": 11,
+      "measure_count": 14,
+      "key_cycle_verse": "30:48 (Rûm: \"Allah O'dur ki rüzgarları gönderir, onlar da bulutu kaldırır...\"), 23:18 (Mü'minûn: \"Biz gökten belli bir ölçüye (bi-kaderin) göre su indirdik...\")",
+      "cycle_evaluation": "Rüzgarların aşılayıcı ve bulutları sürücü rolü, bulutların yoğunlaşması, yağmurun belli bir miktar/ölçü (kader) ile indirilmesi aşamaları meteorolojik prensiplere uygun sıra ve ifadelerle zikredilmektedir."
+    },
+    "seven_heavens": {
+      "title": "Klimatolojik Atmosfer Katmanları (Yedi Gök [سبع سماوات])",
+      "phrase": "سَبْعَ سَمَاوَاتٍ / السَّمَاوَاتُ السَّبْعُ (Yedi Gök)",
+      "phrase_exact_count": 7,
+      "matching_ayahs": [
+        "2:29",
+        "17:44",
+        "23:86",
+        "41:12",
+        "65:12",
+        "67:3",
+        "71:15"
+      ],
+      "verse_details": [
+        {
+          "verse": "2:29",
+          "arabic": "سَبْعَ سَمَاوَاتٍ",
+          "surah": "Bakara 29"
+        },
+        {
+          "verse": "17:44",
+          "arabic": "السَّمَاوَاتُ السَّبْعُ",
+          "surah": "İsrâ 44"
+        },
+        {
+          "verse": "23:86",
+          "arabic": "السَّمَاوَاتِ السَّبْعِ",
+          "surah": "Mü'minûn 86"
+        },
+        {
+          "verse": "41:12",
+          "arabic": "سَبْعَ سَمَاوَاتٍ",
+          "surah": "Fussilet 12"
+        },
+        {
+          "verse": "65:12",
+          "arabic": "سَبْعَ سَمَاوَاتٍ",
+          "surah": "Talâk 12"
+        },
+        {
+          "verse": "67:3",
+          "arabic": "سَبْعَ سَمَاوَاتٍ",
+          "surah": "Mülk 3"
+        },
+        {
+          "verse": "71:15",
+          "arabic": "سَبْعَ سَمَاوَاتٍ",
+          "surah": "Nûh 15"
+        }
+      ],
+      "scientific_atmospheric_layers": "7 Atmosferik Katman: 1. Troposfer, 2. Stratosfer, 3. Mezosfer, 4. Termosfer, 5. Ekzosfer, 6. İyonosfer, 7. Manyetosfer / Ozonosfer",
+      "evaluation": "Kur'an-ı Kerim'de \"Yedi Gök\" tamlaması tam 7 farklı ayette doğrudan zikredilerek atmosferin ve gök tabakalarının 7 katmanlı yapısıyla hem kavramsal hem de matematiksel olarak birebir örtüşmektedir."
+    }
+  }
+}

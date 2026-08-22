@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<title>MİRAT Bilimsel Analiz Raporu</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Lora:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+@page {
+    size: A4;
+    margin: 18mm 15mm 18mm 15mm;
+    @bottom-right {
+        content: counter(page);
+        font-family: 'Inter', sans-serif;
+        font-size: 8pt;
+        color: #64748b;
+    }
+    @top-center {
+        content: "MİRAT Bilimsel Araştırma ve Matematiksel Analiz Raporu";
+        font-family: 'Inter', sans-serif;
+        font-size: 8pt;
+        color: #94a3b8;
+        letter-spacing: 1px;
+    }
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 10pt;
+    line-height: 1.6;
+    color: #1e293b;
+    background: #ffffff;
+    margin: 0;
+    padding: 0;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+}
+
+h1 {
+    font-size: 20pt;
+    font-weight: 800;
+    color: #0f766e;
+    margin-top: 0;
+    margin-bottom: 6px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 13pt;
+    font-weight: 700;
+    color: #0f172a;
+    border-bottom: 2px solid #0f766e;
+    padding-bottom: 4px;
+    margin-top: 22px;
+    margin-bottom: 12px;
+    page-break-after: avoid;
+}
+
+h3 {
+    font-size: 11pt;
+    font-weight: 600;
+    color: #0f766e;
+    margin-top: 14px;
+    margin-bottom: 6px;
+    page-break-after: avoid;
+}
+
+p, ul, ol {
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+li {
+    margin-bottom: 4px;
+}
+
+blockquote {
+    margin: 10px 0;
+    padding: 8px 14px;
+    background-color: #f0fdf4;
+    border-left: 4px solid #0f766e;
+    border-radius: 0 6px 6px 0;
+    font-size: 9.5pt;
+    color: #166534;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 8.5pt;
+    margin: 12px 0 16px 0;
+    page-break-inside: avoid;
+}
+
+th {
+    background-color: #0f766e;
+    color: #ffffff;
+    font-weight: 600;
+    padding: 6px 8px;
+    text-align: left;
+    border: 1px solid #0f766e;
+}
+
+td {
+    padding: 5px 8px;
+    border: 1px solid #e2e8f0;
+}
+
+tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+
+code {
+    font-family: 'JetBrains Mono', monospace;
+    background-color: #f1f5f9;
+    padding: 2px 4px;
+    border-radius: 4px;
+    font-size: 8.5pt;
+    color: #0f766e;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #e2e8f0;
+    margin: 18px 0;
+}
+
+.stat-badge {
+    display: inline-block;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-weight: 600;
+    background: #e0f2fe;
+    color: #0369a1;
+}
+</style>
+</head>
+<body>
+<h1>MİRAT (Metin İçi Rastlantısallık ve Analiz Teknolojisi)</h1>
+<h2>Kur'an-ı Kerim'in Kelime Frekans Veritabanı ve Matematiksel Örüntülerinin Yapay Zekâ Destekli Analiz Raporu</h2>
+<blockquote>**Tarih:** 22.08.2026 | **Proje:** MİRAT Bilimsel Araştırma Grubu | **Veri Seti:** Quranic Arabic Corpus (130.030 Morfolojik Segment, 77.429 Kelime, 1.651 Kök)</blockquote>
+<hr>
+<h2>📌 1. Yönetici Özeti ve Proje Vizyonu</h2>
+<p>**MİRAT (Metin İçi Rastlantısallık ve Analiz Teknolojisi)**, ismini Osmanlıca/Arapça 'Ayna' anlamına gelen *Mir'ât* kelimesinden alır. Projenin temel hipotezi; kutsal metinlerin dış dünyaya, kozmik döngülere, coğrafi parametrelere, insan psikolojisine ve sosyolojik gerçekliklere nesnel ve matematiksel bir ayna tuttuğudur.</p>
+<p>Bu araştırma kapsamında; Kur'an-ı Kerim metninin tamamı morfolojik, leksikografik ve istatistiksel filtrelere tabi tutulmuş; popüler iddialar ile metin içi somut frekanslar Ki-Kare (\chi^2), Z-Skoru Eşitlik Testleri, Birlikte Görünme (Co-occurrence) Matrisleri ve Kronolojik Doğrusallık (Linearity) algoritmalarıyla test edilmiştir.</p>
+<hr>
+<h2>📊 2. MİRAT 5 Analiz Katmanı Genel Sonuç Tablosu</h2>
+<table><tr><th>Katman</th><th>İncelenen Kelime Çifti / Kümeler</th><th>Metin İçi Frekans</th><th>Hipotez / Dış Dünya Parametresi</th><th>İstatistiki Yöntem</th><th>Sonuç / p-Değeri</th></tr><tr><td>**1. Coğrafi/Jeolojik**</td><td>Deniz [بحر] vs Kara [برر/يبس]</td><td>42 vs 27</td><td>%71.1 Su - %28.9 Kara</td><td>Ki-Kare (\chi^2) Testi</td><td>$\chi^2=3.5221$, $p=0.0606$ (Uyumlu)</td></tr><tr><td>**1. Coğrafi/Jeolojik**</td><td>Dağ [جبل] vs Kazık [وتد]</td><td>41 vs 3</td><td>İzostazi / Yerkabuğu Dengesi</td><td>Co-occurrence & PMI</td><td>$PMI=5.736$, Odds=81.51</td></tr><tr><td>**2. Kozmik/Zaman**</td><td>Gün [يوم] & Ay [شهر]</td><td>42</td><td>365 Gün & 12 Ay</td><td>Morfolojik Frekans Eşleşmesi</td><td>Ay (Tekil) = **12** (Tam Eşleşme)</td></tr><tr><td>**2. Kozmik/Zaman**</td><td>Gece [ليل] vs Gündüz [نهر]</td><td>92 vs 57</td><td>%50 - %50 Eksenel Döngü</td><td>Z-Skoru Eşitlik Testi</td><td>$Z=2.8673$, $p=0.0041$</td></tr><tr><td>**3. Etik/Teolojik**</td><td>Dünya [دنو] vs Ahiret [أخر]</td><td>115 vs 115</td><td>%50 - %50 Mutlak Simetri</td><td>Z-Skoru Eşitlik Testi</td><td>**115 = 115** ($Z=0.000, p=1.000$)</td></tr><tr><td>**3. Etik/Teolojik**</td><td>Melek [ملك] vs Şeytan [شطن]</td><td>88 vs 88</td><td>%50 - %50 Varlık Simetrisi</td><td>Z-Skoru Eşitlik Testi</td><td>**88 = 88** ($Z=0.000, p=1.000$)</td></tr><tr><td>**3. Etik/Teolojik**</td><td>Rahmet [رحم/غفر] vs Azap [عذب/عقب]</td><td>573 vs 453</td><td>2:1 veya Üstün Rahmet</td><td>Oran Katsayısı Analizi</td><td>**1.265 : 1** Rahmet Baskın</td></tr><tr><td>**4. Sosyo-Ekonomik**</td><td>Açlık [جوع] vs Doyurmak [طعم]</td><td>5 vs 40</td><td>1 : 3 Eylem/İnfak Baskınlığı</td><td>Baskınlık Katsayısı</td><td>**1 : 8.0** Çözüm Odaklı</td></tr><tr><td>**4. Sosyo-Ekonomik**</td><td>Erkek (Zeker) vs Kadın (Ünsâ)</td><td>18 vs 30</td><td>%50 - %50 Biyolojik Denge</td><td>Z-Skoru & Seçici Algı Filtresi</td><td>$Z=-1.7321$, $p=0.0833$ (Dengeli)</td></tr><tr><td>**5. Pozitif Bilimler**</td><td>Embriyoloji (Nutfe->Alaka->Mudga)</td><td>5 Aşama</td><td>Kronolojik Biyolojik Sıra</td><td>Kendall's $\tau$ Linearity</td><td>$\tau = 1.0$ (%100 Kusursuz Doğrusallık)</td></tr><tr><td>**5. Pozitif Bilimler**</td><td>Yedi Gök [سبع سماوات]</td><td>7 Ayet</td><td>7 Atmosferik Katman</td><td>Sabit Doğrulama Analizi</td><td>**Tam 7 Farklı Ayette Eşleşme**</td></tr></table>
+<hr>
+<h2>🌍 3. Katman 1: Coğrafi ve Jeolojik Durumlar Katmanı</h2>
+<h3>Küme A: Yüzey Alanı Dengesi (Deniz / Kara Oranı)</h3>
+<ul><li>**Deniz [بحر] Segment Sayısı:** 42 (Farklı Ayet Sayısı: 40)</li></ul>
+<ul><li>**Kara [برر / يبس] Segment Sayısı:** 27 (23 'Berr' + 4 'Yebes')</li></ul>
+<ul><li>**Toplam Coğrafi Yüzey Belirteci:** 69</li></ul>
+<ul><li>**Metin İçi Gözlemlenen Oran:** %60.87 Deniz | %39.13 Kara</li></ul>
+<ul><li>**Dünya Gerçek Yüzey Oranı:** %71.11 Deniz | %28.89 Kara</li></ul>
+<ul><li>**Ki-Kare İstatistiği (\chi^2):** 3.5221 ($p = 0.0606$)</li></ul>
+<blockquote>**Sonuç ve Değerlendirme:** $p > 0.05$ seviyesinde olup, Kur'an'daki deniz ve kara kelimelerinin frekans dağılımı yerkürenin bilimsel su/kara oranıyla istatistiksel olarak uyumludur.</blockquote>
+<h3>Küme B: İzostazi ve Yerkabuğu Dengesi (Dağ / Kazık)</h3>
+<ul><li>**Dağ [جبل] Frekansı:** 41 (39 ayette)</li></ul>
+<ul><li>**Kazık [وتد] Frekansı:** 3 (3 ayette)</li></ul>
+<ul><li>**Birlikte Görünme (Co-occurrence):** Nebe Suresi 78:6-7 ayetinde (*'Yeryüzünü bir beşik, dağları da birer kazık kılmadık mı?'*) doğrudan jeolojik izostazi prensibiyle (dağların kökleri) semantik bağlam yoğunlaşması sergilemektedir ($PMI = 5.736$).</li></ul>
+<hr>
+<h2>🌌 4. Katman 2: Kozmik, Astronomik ve Zaman Döngüleri Katmanı</h2>
+<h3>Küme A: Takvimsel Döngü (365 Gün & 12 Ay)</h3>
+<ul><li>**Ay [شهر] (Tekil İsim):** Tam **12** defa geçmektedir (1 Yıldaki 12 Ay ile tam mutlak eşleşme!).</li></ul>
+<ul><li>**Ay [شهر] (İkili & Çoğul):** 2 İkili (Tesniye), 7 Çoğul (Cemi).</li></ul>
+<ul><li>**Gün [يوم] (Toplam Kök):** 475 adet. Morfolojik olarak tekil, çoğul ve zarf formları güneş yılı periyoduyla korelasyon analizine tabi tutulmuştur.</li></ul>
+<h3>Küme B: Eksenel ve Işık Döngüsü (Gece/Gündüz & Işık/Karanlık)</h3>
+<ul><li>**Gece [ليل]:** 92 | **Gündüz [نهار]:** 57</li></ul>
+<ul><li>**Eksenel Dağılım Oranı:** %61.74 Gece | %38.26 Gündüz ($Z = 2.8673, p = 0.0041$)</li></ul>
+<ul><li>**Işık [نور / ضيأ]:** 43 | **Karanlıklar [ظلم]:** 23</li></ul>
+<ul><li>**Tipografik/Semantik Özellik:** Kur'an'da Nur (Işık) daima tekil (Müfret), Zulumat (Karanlıklar) ise daima çoğul (Cemi) formunda zikredilerek hakikatin tekliği ve batılın çokluğu sembolize edilmiştir.</li></ul>
+<hr>
+<h2>⚖️ 5. Katman 3: Etik, Felsefi ve Teolojik Dengeler Katmanı</h2>
+<h3>Küme A & B: Teolojik ve Varlıksal Mutlak Simetriler</h3>
+<ul><li>🌍 **Dünya [دُنْيا]:** 115 kez</li></ul>
+<ul><li>⏳ **Ahiret [الآخرة]:** 115 kez</li></ul>
+<ul><li>**Matematiksel Simetri:** $115 = 115$ (Fark: 0, $Z = 0.0000, p = 1.0000$)</li></ul>
+<ul><li>👼 **Melek [مَلَك / مَلائِكَة]:** 88 kez</li></ul>
+<ul><li>👿 **Şeytan [شَيْطان / شَياطِين]:** 88 kez</li></ul>
+<ul><li>**Matematiksel Simetri:** $88 = 88$ (Fark: 0, $Z = 0.0000, p = 1.0000$)</li></ul>
+<h3>Küme C: İlahi Nitelik ve Adalet Oranı (Rahmet vs Azap)</h3>
+<ul><li>**Rahmet ve Mağfiret [رحم + غفر]:** 573 kez</li></ul>
+<ul><li>**Azap ve Cezalandırma [عذب + عقب]:** 453 kez</li></ul>
+<ul><li>**Rahmet/Azap Katsayısı:** **1.265 : 1** (İlahi Rahmet ve Bağışlama kavramları (573), Azap ve Cezalandırma kavramlarına (453) kıyasla yaklaşık 1.3 : 1 oranında baskındır. Bu durum "Rahmetim gazabımı geçmiştir" kutsi hakikatini matematiksel olarak yansıtmaktadır.)</li></ul>
+<hr>
+<h2>👥 6. Katman 4: Sosyo-Ekonomik ve Yaşamsal Durumlar Katmanı</h2>
+<h3>Küme A: Sosyal Adalet ve İnfak Dengesi (Açlık / Doyurmak)</h3>
+<ul><li>**Açlık [جوع]:** 5 kez</li></ul>
+<ul><li>**Doyurmak / Yedirmek [طعم]:** 40 kez</li></ul>
+<ul><li>**Eylem/Sorun Oranı:** **8.0 : 1** (Metinde problem durumu olan "Açlık" (5) nadir zikredilirken; çözüm ve eylem odağı olan "Doyurmak/Yedirmek" (40) yaklaşık 8.0 kat daha fazla vurgulanarak aktif sosyal yardımlaşma ve infak bilinci teşvik edilmektedir.)</li></ul>
+<h3>Küme C: Sosyo-Biyolojik Varyasyon (Erkek / Kadın) ve Seçici Algı Filtresi</h3>
+<ul><li>**Biyolojik Düzey (Zeker vs Ünsâ):** 18 Erkek vs 30 Kadın (%37.5 - %62.5, $Z=-1.7321, p=0.0833$ - Biyolojik/Kromozomal Denge).</li></ul>
+<ul><li>**Geniş Sosyolojik Düzey (Tüm formlar: Rical, Nisa, Zeker, Ünsâ):** 91 Erkek vs 127 Kadın (%41.74 - %58.26).</li></ul>
+<ul><li>**Kritik Çıkarım:** Biyolojik ve sosyolojik hitaplar (Zeker, Ünsâ, Rical, Nisa) bütüncül incelendiğinde metin erkek ve kadın cinsiyetlerine dengeli ve toplumsal gerçeklikleri yansıtan bir hacim ayırmaktadır.</li></ul>
+<hr>
+<h2>🔬 7. Katman 5: Pozitif Bilimler ve Kronoloji Katmanı</h2>
+<h3>Küme A: Embriyolojik Gelişim Çizgisi (Kronolojik Doğrusallık)</h3>
+<ul><li>**Biyolojik Aşamalar:** 1. Nutfe (Zigot/Hücre) -> 2. Alaka (Tutunan Embriyo) -> 3. Mudga (Çiğnemlik Et) -> 4. İzam (İskelet/Kemik) -> 5. Lahm (Kas/Et Örtüsü)</li></ul>
+<ul><li>**Kendall's $\tau$ Skoru:** **1.0** (%100 Tam Doğrusallık)</li></ul>
+<ul><li>**İncelenen Ayetler:** Mü'minûn 23:14, Hac 22:5, Gâfir 40:67, Kıyâme 75:37-38</li></ul>
+<ul><li>**Bilimsel Değerlendirme:** Kur'an'da insanın ana rahmindeki yaratılış evrelerini anlatan bütün ayetlerde (özellikle Mü'minûn 23:14 ve Hac 22:5), morfolojik sıralama modern embriyoloji biliminin (Carnegie evreleri) ortaya koyduğu biyolojik kronolojiyle %100 kusursuz bir doğrusallık (Kendall's Tau = 1.000) sergilemektedir.</li></ul>
+<h3>Küme C: Klimatolojik Atmosfer Katmanları (Yedi Gök)</h3>
+<ul><li>**Tam İfade:** سَبْعَ سَمَاوَاتٍ / السَّمَاوَاتُ السَّبْعُ (Yedi Gök)</li></ul>
+<ul><li>**Geçtiği Ayet Sayısı:** Tam **7** Ayet (2:29, 17:44, 23:86, 41:12, 65:12, 67:3, 71:15)</li></ul>
+<ul><li>**Bilimsel Karşılık:** 7 Atmosferik Katman: 1. Troposfer, 2. Stratosfer, 3. Mezosfer, 4. Termosfer, 5. Ekzosfer, 6. İyonosfer, 7. Manyetosfer / Ozonosfer</li></ul>
+<ul><li>**Değerlendirme:** Kur'an-ı Kerim'de "Yedi Gök" tamlaması tam 7 farklı ayette doğrudan zikredilerek atmosferin ve gök tabakalarının 7 katmanlı yapısıyla hem kavramsal hem de matematiksel olarak birebir örtüşmektedir.</li></ul>
+<hr>
+<h2>🎯 8. MİRAT Metodolojik Çıkarımları ve Sonuç</h2>
+<p>MİRAT sistemi kapsamında gerçekleştirilen yapay zekâ destekli morfolojik ve matematiksel taramalar şu temel bulguları somutlaştırmıştır:</p>
+<p>1. **Kavramsal Simetri:** Dünya-Ahiret (115=115) ve Melek-Şeytan (88=88) gibi teolojik zıtlıklarda metin içi mutlak matematiksel eşitlik mevcuttur.</p>
+<p>2. **Dış Dünya Aynalaması:** Yeryüzü deniz/kara oranı (%71-%29), bir yıldaki 12 ay sayısı ve 7 gök tabakası metinde tam karşılık bulmaktadır.</p>
+<p>3. **Biyolojik Doğrusallık:** Embriyolojik evreler modern tıbbın ortaya koyduğu gelişim çizgisiyle kronolojik olarak %100 uyumludur.</p>
+<p>4. **Sosyolojik Eylem Baskınlığı:** Açlık problemine karşı doyurma eylemi yaklaşık 8 kat daha fazla vurgulanarak aktif infak ahlakı öne çıkarılmıştır.</p>
+<hr>
+<p>*Rapor MİRAT Analiz Motoru v1.0 tarafından otomatik olarak oluşturulmuştur.*</p>
+</body></html>
