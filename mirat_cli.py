@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 MİRAT (Metin İçi Rastlantısallık ve Analiz Teknolojisi)
-Komut Satırı ve Etkileşimli Analiz Arayüzü (CLI) v2.0
+Komut Satırı ve Etkileşimli Analiz Arayüzü (CLI) v3.0
 """
 
 import argparse
@@ -17,12 +17,13 @@ from mirat.layers.layer4_socioeconomic import analyze_layer_4
 from mirat.layers.layer5_science import analyze_layer_5
 from mirat.report_generator import run_all_and_save
 from mirat.pattern_miner import MiratPatternMiner
+from mirat.antonym_synonym_engine import MiratAntonymSynonymEngine
 
 def print_banner():
-    print("=" * 75)
-    print(" 🏛️  MİRAT (Metin İçi Rastlantısallık ve Analiz Teknolojisi) v2.0")
-    print(" Kur'an-ı Kerim Morfolojik Veritabanı ve Matematiksel Örüntü Motoru")
-    print("=" * 75)
+    print("=" * 78)
+    print(" 🏛️  MİRAT (Metin İçi Rastlantısallık ve Analiz Teknolojisi) v3.0")
+    print(" Kur'an-ı Kerim Morfolojik Veritabanı, Zıt/Eş Anlam ve Matematiksel Örüntü Motoru")
+    print("=" * 78)
 
 def main():
     parser = argparse.ArgumentParser(description="MİRAT Kur'an Morfolojik Analiz ve Matematiksel Örüntü Sistemi")
@@ -30,6 +31,8 @@ def main():
     parser.add_argument("--all", action="store_true", help="Tüm 5 temel analiz katmanını çalıştırır ve rapor üretir")
     parser.add_argument("--mine", action="store_true", help="100+ Matematiksel/Bilimsel örüntüyü içeren dev madencilik kataloğunu çalıştırır")
     parser.add_argument("--category", type=int, choices=list(range(1, 11)), help="10 Örüntü madenciliği kategorisinden birini seçip listeler (1..10)")
+    parser.add_argument("--antonyms", action="store_true", help="Zıt anlamlı kelimelerin 7 farklı kural ile modellenmiş analizini çalıştırır")
+    parser.add_argument("--synonyms", action="store_true", help="Eş anlamlı kelime kümelerinin bağlam ve nüans analizini listeler")
     parser.add_argument("--root", type=str, help="Arapça kök harfleriyle arama ve frekans analizi (Örn: --root بحر)")
     parser.add_argument("--lemma", type=str, help="Arapça sözlük kök formuyla arama (Örn: --lemma دُنْيا)")
     parser.add_argument("--compare", nargs=2, metavar=('ROOT1', 'ROOT2'), help="İki kökü istatistiksel ve matematiksel olarak karşılaştırır")
@@ -45,11 +48,43 @@ def main():
         
     db = MiratDB()
     miner = MiratPatternMiner(db)
+    antonym_engine = MiratAntonymSynonymEngine(db)
     
+    if args.antonyms:
+        print_banner()
+        print("Zıt Anlamlı Kelimelerin 7 Kural ile Analizi Çalıştırılıyor...\n")
+        antonym_engine.generate_comprehensive_report()
+        res = antonym_engine.run_full_analysis()
+        if args.json:
+            print(json.dumps(res, indent=2, ensure_ascii=False))
+        else:
+            r1 = res['rule1_root_exact_parity']
+            print(f"📌 {r1['title']}:")
+            for item in r1['items']:
+                print(f"  • {item['name']:35} | {item['count1']:3d} vs {item['count2']:3d} | VSI: %{item['vsi_score']} | {item['p_value']}")
+            print("\n" + "="*50 + "\n")
+            r4 = res['rule4_tibak_co_occurrence']
+            print(f"📌 {r4['title']}:")
+            for item in r4['items']:
+                print(f"  • {item['pair_name']:35} | Aynı Ayette: {item['same_ayah_count']:3d} Ayet | PMI: {item['pmi']}")
+        return
+
+    if args.synonyms:
+        print_banner()
+        r6 = antonym_engine.analyze_rule6_synonym_clusters()
+        print(f"📌 {r6['title']}\n")
+        for cl in r6['clusters']:
+            print(f"🔹 {cl['cluster_name']}:")
+            for m in cl['members']:
+                print(f"   • {m[0]:15} (Toplam {m[1]:2d} kez): {m[2]}")
+            print(f"   💡 Semantik Kural: {cl['semantic_rule']}\n")
+        return
+
     if args.mine or args.report:
         print_banner()
         print("MİRAT Örüntü Madenciliği ve Raporlama Motoru Çalıştırılıyor...\n")
         miner.generate_master_catalog()
+        antonym_engine.generate_comprehensive_report()
         run_all_and_save()
         print("\n✅ Tüm MİRAT Külliyatı, Raporları ve PDF Katalogları Başarıyla Güncellendi!")
         return

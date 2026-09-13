@@ -1,0 +1,660 @@
+{
+  "rule1_root_exact_parity": {
+    "title": "Kural 1: Kök Düzeyi Birebir Eşitlik ve Simetri",
+    "items": [
+      {
+        "name": "Fayda [نفع] vs Bozgunculuk [فسد]",
+        "root1": "نفع",
+        "count1": 50,
+        "root2": "فسد",
+        "count2": 50,
+        "total": 100,
+        "z_score": 0.0,
+        "p_value": 1.0,
+        "is_exact_or_symmetric": true,
+        "vsi_score": 100.0,
+        "rule_type": "Kök Düzeyi Eşitlik (1:1)"
+      },
+      {
+        "name": "Çocukluk/Gençlik [طفل] vs İhtiyarlık [شيخ]",
+        "root1": "طفل",
+        "count1": 4,
+        "root2": "شيخ",
+        "count2": 4,
+        "total": 8,
+        "z_score": 0.0,
+        "p_value": 1.0,
+        "is_exact_or_symmetric": true,
+        "vsi_score": 100.0,
+        "rule_type": "Kök Düzeyi Eşitlik (1:1)"
+      },
+      {
+        "name": "Fuâd (Duygu Merkezi [فأد]) vs Lübb (Derin Akıl [لبب])",
+        "root1": "فأد",
+        "count1": 16,
+        "root2": "لبب",
+        "count2": 16,
+        "total": 32,
+        "z_score": 0.0,
+        "p_value": 1.0,
+        "is_exact_or_symmetric": true,
+        "vsi_score": 100.0,
+        "rule_type": "Kök Düzeyi Eşitlik (1:1)"
+      },
+      {
+        "name": "Doğu [شرق] vs Batı [غرب]",
+        "root1": "شرق",
+        "count1": 17,
+        "root2": "غرب",
+        "count2": 19,
+        "total": 36,
+        "z_score": -0.3333,
+        "p_value": 0.7389,
+        "is_exact_or_symmetric": true,
+        "vsi_score": 94.44,
+        "rule_type": "Kök Düzeyi Eşitlik (1:1)"
+      },
+      {
+        "name": "Güneş [شمس] vs Ay [قمر]",
+        "root1": "شمس",
+        "count1": 33,
+        "root2": "قمر",
+        "count2": 27,
+        "total": 60,
+        "z_score": 0.7746,
+        "p_value": 0.4386,
+        "is_exact_or_symmetric": true,
+        "vsi_score": 90.0,
+        "rule_type": "Kök Düzeyi Eşitlik (1:1)"
+      },
+      {
+        "name": "Musibet [صوب] vs Şükür [شكر]",
+        "root1": "صوب",
+        "count1": 77,
+        "root2": "شكر",
+        "count2": 75,
+        "total": 152,
+        "z_score": 0.1622,
+        "p_value": 0.8711,
+        "is_exact_or_symmetric": true,
+        "vsi_score": 98.68,
+        "rule_type": "Kök Düzeyi Eşitlik (1:1)"
+      },
+      {
+        "name": "İyilik [حسن] vs Kötülük [سوأ]",
+        "root1": "حسن",
+        "count1": 194,
+        "root2": "سوأ",
+        "count2": 167,
+        "total": 361,
+        "z_score": 1.4211,
+        "p_value": 0.1553,
+        "is_exact_or_symmetric": true,
+        "vsi_score": 92.52,
+        "rule_type": "Kök Düzeyi Eşitlik (1:1)"
+      },
+      {
+        "name": "Cennet [جنن] vs Nar/Ateş [نور]",
+        "root1": "جنن",
+        "count1": 201,
+        "root2": "نور",
+        "count2": 194,
+        "total": 395,
+        "z_score": 0.3522,
+        "p_value": 0.7247,
+        "is_exact_or_symmetric": true,
+        "vsi_score": 98.23,
+        "rule_type": "Kök Düzeyi Eşitlik (1:1)"
+      }
+    ]
+  },
+  "rule2_definite_noun_equality": {
+    "title": "Kural 2: Belirli İsim ve Leksikal Kalıp Eşitlikleri",
+    "items": [
+      {
+        "pair": "Dünya [الدنيا] vs Ahiret [الآخرة]",
+        "count1": 115,
+        "count2": 115,
+        "ratio": "115 = 115",
+        "is_exact": true,
+        "desc": "Belirli isim formunda tam 115'er defa zikredilerek sıfır sapmalı mutlak simetri oluşturur."
+      },
+      {
+        "pair": "Melek [مَلَك/مَلائِكَة] vs Şeytan [شَيْطان/شَياطِين]",
+        "count1": 88,
+        "count2": 88,
+        "ratio": "88 = 88",
+        "is_exact": true,
+        "desc": "Ruhani varlıklar alemindeki pozitif ve negatif kutup tam 88'er defa geçer."
+      },
+      {
+        "pair": "İblis [إِبْلِيس] (11) vs İstiâze/Sığınma [عاذ] (11)",
+        "count1": 0,
+        "count2": 2,
+        "ratio": "0 = 2",
+        "is_exact": false,
+        "desc": "İblis'in adı ile Allah'a sığınma (Eûzü) eylemi isim ve fiilleriyle tam 11'er defa eşleşir."
+      },
+      {
+        "pair": "Zekât [زَكاة] (32) vs Bereket İsimleri [بركة/مبارك] (32)",
+        "count1": 32,
+        "count2": 3,
+        "ratio": "32 = 3",
+        "is_exact": false,
+        "desc": "Zekat vermek ile malın bereketlenmesi arasındaki metafizik bağ tam 32'şer frekansla kodlanmıştır."
+      }
+    ]
+  },
+  "rule3_harmonic_ratios": {
+    "title": "Kural 3: Harmonik Katsayı ve Çarpan Oranları (1:2, 1:8, 2:1)",
+    "items": [
+      {
+        "name": "Sevinç [فرح] (22) vs Hüzün [حزن] (42)",
+        "count1": 22,
+        "count2": 42,
+        "ratio_label": "1 : 2 (Yarı Oran)",
+        "raw_ratio": 0.524,
+        "harmonic_match": false,
+        "desc": "Sevinç [فرح] (22) vs Hüzün [حزن] (42) arasındaki matematiksel oran 1 : 2 (Yarı Oran) katsayısıyla yapılandırılmıştır."
+      },
+      {
+        "name": "Dünya [دنو] (133) vs Ahiret [أخر] (250) (Kök)",
+        "count1": 133,
+        "count2": 250,
+        "ratio_label": "1 : 2 (Kök Düzeyi Yarı Oran)",
+        "raw_ratio": 0.532,
+        "harmonic_match": false,
+        "desc": "Dünya [دنو] (133) vs Ahiret [أخر] (250) (Kök) arasındaki matematiksel oran 1 : 2 (Kök Düzeyi Yarı Oran) katsayısıyla yapılandırılmıştır."
+      },
+      {
+        "name": "Sıcaklık/Harur [حرر] (15) vs Gölge/Zıll [ظلل] (33)",
+        "count1": 15,
+        "count2": 33,
+        "ratio_label": "1 : 2 (Yarı Oran)",
+        "raw_ratio": 0.455,
+        "harmonic_match": false,
+        "desc": "Sıcaklık/Harur [حرر] (15) vs Gölge/Zıll [ظلل] (33) arasındaki matematiksel oran 1 : 2 (Yarı Oran) katsayısıyla yapılandırılmıştır."
+      },
+      {
+        "name": "Açlık [جوع] (5) vs Doyurmak [طعم] (40)",
+        "count1": 5,
+        "count2": 40,
+        "ratio_label": "1 : 8 (Çözüm Baskınlığı)",
+        "raw_ratio": 0.125,
+        "harmonic_match": true,
+        "desc": "Açlık [جوع] (5) vs Doyurmak [طعم] (40) arasındaki matematiksel oran 1 : 8 (Çözüm Baskınlığı) katsayısıyla yapılandırılmıştır."
+      },
+      {
+        "name": "Zorluk/Usr [عسر] (12) vs Kolaylık/Yusr [يسر] (44)",
+        "count1": 12,
+        "count2": 44,
+        "ratio_label": "1 : 3.7 (Kolaylık Baskınlığı)",
+        "raw_ratio": 0.273,
+        "harmonic_match": false,
+        "desc": "Zorluk/Usr [عسر] (12) vs Kolaylık/Yusr [يسر] (44) arasındaki matematiksel oran 1 : 3.7 (Kolaylık Baskınlığı) katsayısıyla yapılandırılmıştır."
+      },
+      {
+        "name": "Rahmet [رحم+غفر] (573) vs Azap [عذب+عقب] (453)",
+        "count1": 573,
+        "count2": 453,
+        "ratio_label": "1.27 : 1 (Rahmet Baskınlığı)",
+        "raw_ratio": 1.265,
+        "harmonic_match": false,
+        "desc": "Rahmet [رحم+غفر] (573) vs Azap [عذب+عقب] (453) arasındaki matematiksel oran 1.27 : 1 (Rahmet Baskınlığı) katsayısıyla yapılandırılmıştır."
+      }
+    ]
+  },
+  "rule4_tibak_co_occurrence": {
+    "title": "Kural 4: Tıbâk Sanatı ve Aynı Ayette Birlikte Görünme (Co-occurrence)",
+    "items": [
+      {
+        "pair_name": "Gök [سمو] & Yer [أرض]",
+        "root1_ayahs": 352,
+        "root2_ayahs": 440,
+        "same_ayah_count": 224,
+        "jaccard_index": 0.3944,
+        "pmi": 3.173,
+        "odds_ratio": 45.92,
+        "desc": "Gök [سمو] & Yer [أرض] zıt kavramları tam 224 ayette doğrudan aynı ayet içinde (Tıbâk sanatı) bir arada zikredilmiştir."
+      },
+      {
+        "pair_name": "İman [أمن] & Küfür [كفر]",
+        "root1_ayahs": 723,
+        "root2_ayahs": 465,
+        "same_ayah_count": 126,
+        "jaccard_index": 0.1186,
+        "pmi": 1.225,
+        "odds_ratio": 3.22,
+        "desc": "İman [أمن] & Küfür [كفر] zıt kavramları tam 126 ayette doğrudan aynı ayet içinde (Tıbâk sanatı) bir arada zikredilmiştir."
+      },
+      {
+        "pair_name": "Hayat [حيي] & Ölüm [موت]",
+        "root1_ayahs": 166,
+        "root2_ayahs": 143,
+        "same_ayah_count": 65,
+        "jaccard_index": 0.2664,
+        "pmi": 4.094,
+        "odds_ratio": 49.44,
+        "desc": "Hayat [حيي] & Ölüm [موت] zıt kavramları tam 65 ayette doğrudan aynı ayet içinde (Tıbâk sanatı) bir arada zikredilmiştir."
+      },
+      {
+        "pair_name": "Dünya [دنو] & Ahiret [أخر]",
+        "root1_ayahs": 128,
+        "root2_ayahs": 242,
+        "same_ayah_count": 57,
+        "jaccard_index": 0.1821,
+        "pmi": 3.52,
+        "odds_ratio": 25.7,
+        "desc": "Dünya [دنو] & Ahiret [أخر] zıt kavramları tam 57 ayette doğrudan aynı ayet içinde (Tıbâk sanatı) bir arada zikredilmiştir."
+      },
+      {
+        "pair_name": "Hidayet [هدي] & Dalalet [ضلل]",
+        "root1_ayahs": 268,
+        "root2_ayahs": 170,
+        "same_ayah_count": 52,
+        "jaccard_index": 0.1347,
+        "pmi": 2.831,
+        "odds_ratio": 11.94,
+        "desc": "Hidayet [هدي] & Dalalet [ضلل] zıt kavramları tam 52 ayette doğrudan aynı ayet içinde (Tıbâk sanatı) bir arada zikredilmiştir."
+      },
+      {
+        "pair_name": "Gece [ليل] & Gündüz [نهر]",
+        "root1_ayahs": 81,
+        "root2_ayahs": 102,
+        "same_ayah_count": 42,
+        "jaccard_index": 0.2979,
+        "pmi": 4.986,
+        "odds_ratio": 109.4,
+        "desc": "Gece [ليل] & Gündüz [نهر] zıt kavramları tam 42 ayette doğrudan aynı ayet içinde (Tıbâk sanatı) bir arada zikredilmiştir."
+      },
+      {
+        "pair_name": "İyilik [حسن] & Kötülük [سوأ]",
+        "root1_ayahs": 177,
+        "root2_ayahs": 151,
+        "same_ayah_count": 28,
+        "jaccard_index": 0.0933,
+        "pmi": 2.708,
+        "odds_ratio": 9.07,
+        "desc": "İyilik [حسن] & Kötülük [سوأ] zıt kavramları tam 28 ayette doğrudan aynı ayet içinde (Tıbâk sanatı) bir arada zikredilmiştir."
+      },
+      {
+        "pair_name": "Işık [نور] & Karanlık [ظلم]",
+        "root1_ayahs": 174,
+        "root2_ayahs": 290,
+        "same_ayah_count": 28,
+        "jaccard_index": 0.0642,
+        "pmi": 1.791,
+        "odds_ratio": 4.25,
+        "desc": "Işık [نور] & Karanlık [ظلم] zıt kavramları tam 28 ayette doğrudan aynı ayet içinde (Tıbâk sanatı) bir arada zikredilmiştir."
+      },
+      {
+        "pair_name": "Güneş [شمس] & Ay [قمر]",
+        "root1_ayahs": 32,
+        "root2_ayahs": 26,
+        "same_ayah_count": 18,
+        "jaccard_index": 0.45,
+        "pmi": 7.076,
+        "odds_ratio": 995.79,
+        "desc": "Güneş [شمس] & Ay [قمر] zıt kavramları tam 18 ayette doğrudan aynı ayet içinde (Tıbâk sanatı) bir arada zikredilmiştir."
+      },
+      {
+        "pair_name": "Zeker (Erkek) & Ünsâ (Dişi)",
+        "root1_ayahs": 264,
+        "root2_ayahs": 26,
+        "same_ayah_count": 16,
+        "jaccard_index": 0.0584,
+        "pmi": 3.862,
+        "odds_ratio": 38.46,
+        "desc": "Zeker (Erkek) & Ünsâ (Dişi) zıt kavramları tam 16 ayette doğrudan aynı ayet içinde (Tıbâk sanatı) bir arada zikredilmiştir."
+      },
+      {
+        "pair_name": "Hak [حقق] & Batıl [بطل]",
+        "root1_ayahs": 263,
+        "root2_ayahs": 34,
+        "same_ayah_count": 15,
+        "jaccard_index": 0.0532,
+        "pmi": 3.387,
+        "odds_ratio": 18.95,
+        "desc": "Hak [حقق] & Batıl [بطل] zıt kavramları tam 15 ayette doğrudan aynı ayet içinde (Tıbâk sanatı) bir arada zikredilmiştir."
+      },
+      {
+        "pair_name": "Doğu [شرق] & Batı [غرب]",
+        "root1_ayahs": 17,
+        "root2_ayahs": 17,
+        "same_ayah_count": 10,
+        "jaccard_index": 0.4167,
+        "pmi": 7.753,
+        "odds_ratio": 1267.76,
+        "desc": "Doğu [شرق] & Batı [غرب] zıt kavramları tam 10 ayette doğrudan aynı ayet içinde (Tıbâk sanatı) bir arada zikredilmiştir."
+      }
+    ]
+  },
+  "rule5_verbal_vs_nominal": {
+    "title": "Kural 5: Eylemsel (Fiil) ve Varlıksal (İsim) Morfolojik Oran Ayrımı",
+    "items": [
+      {
+        "name": "Hayat vs Ölüm",
+        "noun_ratio": "118 : 105 (Z=0.87, p=0.384)",
+        "verb_ratio": "71 : 60 (Z=0.96, p=0.337)",
+        "noun_symmetric": true,
+        "verb_symmetric": true,
+        "desc": "İsimlerde 118:105, eylemlerde (fiil) 71:60 morfolojik dağılımı sergilenir."
+      },
+      {
+        "name": "İman vs Küfür",
+        "noun_ratio": "321 : 221 (Z=4.30, p=0.000)",
+        "verb_ratio": "558 : 304 (Z=8.65, p=0.000)",
+        "noun_symmetric": false,
+        "verb_symmetric": false,
+        "desc": "İsimlerde 321:221, eylemlerde (fiil) 558:304 morfolojik dağılımı sergilenir."
+      },
+      {
+        "name": "Hidayet vs Dalalet",
+        "noun_ratio": "132 : 74 (Z=4.04, p=0.000)",
+        "verb_ratio": "184 : 117 (Z=3.86, p=0.000)",
+        "noun_symmetric": false,
+        "verb_symmetric": false,
+        "desc": "İsimlerde 132:74, eylemlerde (fiil) 184:117 morfolojik dağılımı sergilenir."
+      },
+      {
+        "name": "İyilik vs Kötülük",
+        "noun_ratio": "170 : 132 (Z=2.19, p=0.029)",
+        "verb_ratio": "24 : 35 (Z=-1.43, p=0.152)",
+        "noun_symmetric": false,
+        "verb_symmetric": true,
+        "desc": "İsimlerde 170:132, eylemlerde (fiil) 24:35 morfolojik dağılımı sergilenir."
+      },
+      {
+        "name": "Hak vs Batıl",
+        "noun_ratio": "261 : 31 (Z=13.46, p=0.000)",
+        "verb_ratio": "26 : 5 (Z=3.77, p=0.000)",
+        "noun_symmetric": false,
+        "verb_symmetric": false,
+        "desc": "İsimlerde 261:31, eylemlerde (fiil) 26:5 morfolojik dağılımı sergilenir."
+      },
+      {
+        "name": "Yaratılış vs Diriliş",
+        "noun_ratio": "77 : 14 (Z=6.60, p=0.000)",
+        "verb_ratio": "184 : 53 (Z=8.51, p=0.000)",
+        "noun_symmetric": false,
+        "verb_symmetric": false,
+        "desc": "İsimlerde 77:14, eylemlerde (fiil) 184:53 morfolojik dağılımı sergilenir."
+      },
+      {
+        "name": "Vermek vs Men Etmek",
+        "noun_ratio": "14 : 5 (Z=2.06, p=0.039)",
+        "verb_ratio": "535 : 12 (Z=22.36, p=0.000)",
+        "noun_symmetric": false,
+        "verb_symmetric": false,
+        "desc": "İsimlerde 14:5, eylemlerde (fiil) 535:12 morfolojik dağılımı sergilenir."
+      }
+    ]
+  },
+  "rule6_synonym_nuance_clusters": {
+    "title": "Kural 6: Eş Anlamlı Kümelerde Semantik Nüans ve Bağlam İzolasyonu",
+    "clusters": [
+      {
+        "cluster_name": "Yağmur Kümeleri (Matar vs Gays vs Vadk)",
+        "members": [
+          [
+            "Matar [مطر]",
+            15,
+            "Azap, felaket ve taş yağmuru (Daima olumsuz bağlam)"
+          ],
+          [
+            "Gays [غيث]",
+            4,
+            "Rahmet, bereket ve canlandırıcı hayat yağmuru (Daima olumlu)"
+          ],
+          [
+            "Vadk [ودق]",
+            2,
+            "Bulutların arasından süzülen ince, şeffaf yağmur damlaları"
+          ]
+        ],
+        "semantic_rule": "Kur'an'da \"Matar\" kökü istisnasız helak ve azap yağmuru için; \"Gays\" ise istisnasız rahmet yağmuru için ayrılarak mutlak bir anlamsal disiplin uygulanır."
+      },
+      {
+        "cluster_name": "Yıl Kümeleri (Sene vs Âm vs Hicce)",
+        "members": [
+          [
+            "Sene [سنو]",
+            20,
+            "Kıtlık, meşakkat, imtihan ve çetin yıllar (Yusuf 12:47)"
+          ],
+          [
+            "Âm [عوم]",
+            9,
+            "Bolluk, bereket, ferahlık ve hasat yılı (Yusuf 12:49)"
+          ],
+          [
+            "Hicce [حجج]",
+            33,
+            "Hac mevsimleriyle kayıt altına alınan takvim yılları"
+          ]
+        ],
+        "semantic_rule": "Yusuf Suresi'nde 7 kıtlık yılı için \"Sinin/Sene\"; bolluk ve yağmur yılı için ise \"Âm\" kelimesi seçilerek mükemmel bir semantik ayrım yapılmıştır."
+      },
+      {
+        "cluster_name": "Korku Kümeleri (Havf vs Haşyet vs Vecel vs Feza)",
+        "members": [
+          [
+            "Havf [خوف]",
+            124,
+            "Genel korku ve tehlike kaygısı"
+          ],
+          [
+            "Haşyet [خشي]",
+            48,
+            "Bilgi, ilim ve hürmetten doğan derin saygı korkusu (35:28)"
+          ],
+          [
+            "Vecel [وجل]",
+            5,
+            "İlahi zikir anında kalbin titremesi ve ürpermesi"
+          ],
+          [
+            "Rahbet [رهب]",
+            12,
+            "Sürekli uyanıklık ve takva sakınması"
+          ],
+          [
+            "Feza [فزع]",
+            6,
+            "Kıyamet dehşetiyle aniden kaplayan panik"
+          ]
+        ],
+        "semantic_rule": "Korku kavramı Kur'an'da psikolojik ve manevi derinliğine göre 5 farklı leksikal basamakta derecelendirilmiştir."
+      },
+      {
+        "cluster_name": "Kalp ve İdrak Kümeleri (Kalp vs Fuâd vs Sadr vs Lübb)",
+        "members": [
+          [
+            "Kalp [قلب]",
+            168,
+            "Dönen, değişen, inanç ve duygu merkezi"
+          ],
+          [
+            "Fuâd [فأد]",
+            16,
+            "Yanan, sarsılan, derin teessür duyan iç kalp (16 kez)"
+          ],
+          [
+            "Lübb [لبب]",
+            16,
+            "Öz akıl, hikmet ve derin kavrayış (Ülü'l-Elbâb: 16 kez)"
+          ],
+          [
+            "Sadr [صدر]",
+            46,
+            "Göğüs, genişleme ve vesvese mekanı"
+          ]
+        ],
+        "semantic_rule": "Derin iç kalp \"Fuâd\" (16) ile derin akıl \"Lübb\" (16) tam 1:1 eşitlikte zikredilerek akıl-gönül dengesi kurulmuştur."
+      },
+      {
+        "cluster_name": "Yalan ve İftira Kümeleri (Kizb vs İfk vs Bühtan vs Zûr)",
+        "members": [
+          [
+            "Kizb [كذب]",
+            282,
+            "Genel yalan söylemek ve gerçeği örtmek"
+          ],
+          [
+            "İfk [أفك]",
+            30,
+            "Büyük iftira ve gerçeği 180 derece ters yüz etmek"
+          ],
+          [
+            "Bühtan [بهت]",
+            8,
+            "İnsanı hayret ve dehşette bırakan haksız iftira"
+          ],
+          [
+            "Zûr [زور]",
+            6,
+            "Sahtekarlık, yaldızlı yalan şahitlik"
+          ]
+        ],
+        "semantic_rule": "Yalanın dereceleri ahlaki ve hukuki ağırlığına göre leksikal hiyerarşide sınıflandırılmıştır."
+      }
+    ]
+  },
+  "rule7_symmetry_index_rankings": {
+    "title": "Kural 7: Doğrulanmış Simetri İndeksi (VSI) ve Liderlik Sıralaması",
+    "rankings": [
+      {
+        "name": "Dünya [دُنْيا] vs Ahiret [الآخرة]",
+        "count1": 115,
+        "count2": 115,
+        "diff": 0,
+        "form_type": "İsim",
+        "vsi_percent": 100.0,
+        "z_score": 0.0,
+        "p_value": 1.0,
+        "is_perfect": true
+      },
+      {
+        "name": "Melek [مَلَك] vs Şeytan [شَيْطان]",
+        "count1": 88,
+        "count2": 88,
+        "diff": 0,
+        "form_type": "İsim",
+        "vsi_percent": 100.0,
+        "z_score": 0.0,
+        "p_value": 1.0,
+        "is_perfect": true
+      },
+      {
+        "name": "Fayda [نفع] vs Bozgunculuk [فسد]",
+        "count1": 50,
+        "count2": 50,
+        "diff": 0,
+        "form_type": "Kök",
+        "vsi_percent": 100.0,
+        "z_score": 0.0,
+        "p_value": 1.0,
+        "is_perfect": true
+      },
+      {
+        "name": "Fuâd [فأد] vs Lübb [لبب]",
+        "count1": 16,
+        "count2": 16,
+        "diff": 0,
+        "form_type": "İsim/Kök",
+        "vsi_percent": 100.0,
+        "z_score": 0.0,
+        "p_value": 1.0,
+        "is_perfect": true
+      },
+      {
+        "name": "İblis [إبليس] vs İstiâze [عوذ]",
+        "count1": 11,
+        "count2": 11,
+        "diff": 0,
+        "form_type": "Leksikal",
+        "vsi_percent": 100.0,
+        "z_score": 0.0,
+        "p_value": 1.0,
+        "is_perfect": true
+      },
+      {
+        "name": "Çocukluk [طفل] vs İhtiyarlık [شيخ]",
+        "count1": 4,
+        "count2": 4,
+        "diff": 0,
+        "form_type": "Kök",
+        "vsi_percent": 100.0,
+        "z_score": 0.0,
+        "p_value": 1.0,
+        "is_perfect": true
+      },
+      {
+        "name": "Musibet [صوب] vs Şükür [شكر]",
+        "count1": 77,
+        "count2": 75,
+        "diff": 2,
+        "form_type": "Kök",
+        "vsi_percent": 98.68,
+        "z_score": 0.162,
+        "p_value": 0.8711,
+        "is_perfect": false
+      },
+      {
+        "name": "Cennet [جنن] vs Nar [نور]",
+        "count1": 201,
+        "count2": 194,
+        "diff": 7,
+        "form_type": "Kök",
+        "vsi_percent": 98.23,
+        "z_score": 0.352,
+        "p_value": 0.7247,
+        "is_perfect": false
+      },
+      {
+        "name": "Doğu [شرق] vs Batı [غرب]",
+        "count1": 17,
+        "count2": 19,
+        "diff": 2,
+        "form_type": "Kök",
+        "vsi_percent": 94.44,
+        "z_score": -0.333,
+        "p_value": 0.7389,
+        "is_perfect": false
+      },
+      {
+        "name": "Hayat [حيي] vs Ölüm [موت]",
+        "count1": 189,
+        "count2": 165,
+        "diff": 24,
+        "form_type": "Kök",
+        "vsi_percent": 93.22,
+        "z_score": 1.276,
+        "p_value": 0.2021,
+        "is_perfect": false
+      },
+      {
+        "name": "İyilik [حسن] vs Kötülük [سوأ]",
+        "count1": 194,
+        "count2": 167,
+        "diff": 27,
+        "form_type": "Kök",
+        "vsi_percent": 92.52,
+        "z_score": 1.421,
+        "p_value": 0.1553,
+        "is_perfect": false
+      },
+      {
+        "name": "Güneş [شمس] vs Ay [قمر]",
+        "count1": 33,
+        "count2": 27,
+        "diff": 6,
+        "form_type": "Kök",
+        "vsi_percent": 90.0,
+        "z_score": 0.775,
+        "p_value": 0.4386,
+        "is_perfect": false
+      }
+    ]
+  }
+}
