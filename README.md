@@ -21,6 +21,7 @@ Mirat-AI/
 │   └── 📂 cuzler/ (30 MD)               # 30 Cüz Dosyası (1. Cüz - 30. Cüz)
 │
 ├── 📁 raporlar/                         # Bilimsel Araştırma Raporları ve PDF Külliyatı
+│   ├── 👑 MIRAT_BUYUK_KULLIYAT_VE_SISTEM_DOKUMANTASYONU.md / .pdf # Master Ansiklopedi (1.500+ Satır)
 │   ├── 📑 MIRAT_ANALIZ_RAPORU.md / .pdf # 5 Temel Katman Matematiksel Analiz Raporu
 │   ├── 📑 MIRAT_YUZLERCE_ORUNTU_KATALOGU.md / .pdf # 10 Kategoride 100+ Örüntü Master Kataloğu
 │   ├── 📑 MIRAT_ZIT_VE_ES_ANLAMLI_ANALIZI.md / .pdf # 7 Kural Zıt/Eş Anlam Analiz Raporu
