@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 MİRAT (Metin İçi Rastlantısallık ve Analiz Teknolojisi)
-Komut Satırı ve Etkileşimli Analiz Arayüzü (CLI) v3.0
+Komut Satırı ve Etkileşimli Analiz Arayüzü (CLI) v4.0
 """
 
 import argparse
@@ -18,12 +18,13 @@ from mirat.layers.layer5_science import analyze_layer_5
 from mirat.report_generator import run_all_and_save
 from mirat.pattern_miner import MiratPatternMiner
 from mirat.antonym_synonym_engine import MiratAntonymSynonymEngine
+from mirat.advanced_structural_engine import AdvancedStructuralEngine
 
 def print_banner():
-    print("=" * 78)
-    print(" 🏛️  MİRAT (Metin İçi Rastlantısallık ve Analiz Teknolojisi) v3.0")
-    print(" Kur'an-ı Kerim Morfolojik Veritabanı, Zıt/Eş Anlam ve Matematiksel Örüntü Motoru")
-    print("=" * 78)
+    print("=" * 80)
+    print(" 🏛️  MİRAT (Metin İçi Rastlantısallık ve Analiz Teknolojisi) v4.0")
+    print(" Kur'an-ı Kerim Morfolojik Veritabanı, Kriptografi, Fonetik & Dalga Motoru")
+    print("=" * 80)
 
 def main():
     parser = argparse.ArgumentParser(description="MİRAT Kur'an Morfolojik Analiz ve Matematiksel Örüntü Sistemi")
@@ -33,6 +34,11 @@ def main():
     parser.add_argument("--category", type=int, choices=list(range(1, 11)), help="10 Örüntü madenciliği kategorisinden birini seçip listeler (1..10)")
     parser.add_argument("--antonyms", action="store_true", help="Zıt anlamlı kelimelerin 7 farklı kural ile modellenmiş analizini çalıştırır")
     parser.add_argument("--synonyms", action="store_true", help="Eş anlamlı kelime kümelerinin bağlam ve nüans analizini listeler")
+    parser.add_argument("--waveform", action="store_true", help="114 Sure ayet dalga formunu ve Allah lafzı tepe noktalarını listeler/çizer")
+    parser.add_argument("--crypto", action="store_true", help="Kriptografik mukattaa, palindromik ayetler ve 57-57 parite kilidini listeler")
+    parser.add_argument("--chiasmus", action="store_true", help="Âyetü'l-Kürsî ve Bakara Suresi halka yapısı (chiasmus) modelini listeler")
+    parser.add_argument("--phonetics", action="store_true", help="Fâsıla harfleri fonetik ve akustik dalga analizini listeler")
+    parser.add_argument("--structural", action="store_true", help="Tüm ileri yapısal, grafiksel ve kriptografik analizleri çalıştırır ve raporlar")
     parser.add_argument("--root", type=str, help="Arapça kök harfleriyle arama ve frekans analizi (Örn: --root بحر)")
     parser.add_argument("--lemma", type=str, help="Arapça sözlük kök formuyla arama (Örn: --lemma دُنْيا)")
     parser.add_argument("--compare", nargs=2, metavar=('ROOT1', 'ROOT2'), help="İki kökü istatistiksel ve matematiksel olarak karşılaştırır")
@@ -49,30 +55,76 @@ def main():
     db = MiratDB()
     miner = MiratPatternMiner(db)
     antonym_engine = MiratAntonymSynonymEngine(db)
-    
+    structural_engine = AdvancedStructuralEngine(db)
+
+    if args.waveform:
+        print_banner()
+        wf = structural_engine.compute_waveform_analysis()
+        print(f"📈 {wf['title']}\n")
+        print(f"• Toplam Sure: {wf['total_surahs']} | En Çok Ayet: {wf['max_verse_count']} (Bakara) | En Az: {wf['min_verse_count']}")
+        print(f"• Oluşturulan SVG Grafiği: {wf['svg_file']}\n")
+        print("Dört Ana Dalga Vuruşu (Allah Calligraphy Strokes):")
+        for s in wf['silhouette_strokes']:
+            print(f"  • {s['letter']:15} | {s['surah']:20} | {str(s['verses']):15} | {s['role']}")
+        print("\nÖnemli Tepe Noktaları (Major Peaks):")
+        for p in wf['major_peaks']:
+            print(f"  Sure {p['surah_num']:3d} ({p['surah_name']:15}): {p['verse_count']:3d} Ayet")
+        return
+
+    if args.crypto:
+        print_banner()
+        pm = structural_engine.compute_parity_matrix()
+        cp = structural_engine.compute_cryptographic_patterns()
+        print(f"🔐 {pm['title']}\n")
+        print(f"• Çift Toplamlı Sure Sayısı: {pm['even_count']} (Toplamları: {pm['sum_of_even_sums']:,} -> Toplam Ayet Sayısına Eşit!)")
+        print(f"• Tek Toplamlı Sure Sayısı : {pm['odd_count']} (Toplamları: {pm['sum_of_odd_sums']:,} -> Toplam Sure No Toplamına Eşit!)\n")
+        print(f"📜 {cp['title']}\n")
+        print(f"• Mukattaa Başlangıçlı Sureler: {cp['muqattaat_surah_count']} Sure")
+        print(f"• Benzersiz Harf Sayısı: {cp['muqattaat_unique_letters_count']} / 28 ({cp['alphabet_ratio']})")
+        print(f"• Mnemonic: {cp['mnemonic_sentence']}\n")
+        print("Çift Yönlü Döngüsel Okunan Palindromik Ayetler:")
+        for pal in cp['palindromes']:
+            print(f"  • {pal['verse']}: {pal['arabic']} ({pal['transliteration']})")
+            print(f"    Simetri: {pal['letter_sequence']}")
+            print(f"    Anlam & Mucize: {pal['marvel']}\n")
+        return
+
+    if args.chiasmus:
+        print_banner()
+        ch = structural_engine.compute_chiasmus_ring_composition()
+        print(f"🔄 {ch['title']}\n")
+        print("Âyetü'l-Kürsî (2:255) 9 Cümleli Konsantrik Hiyazm:")
+        for r in ch['ayat_al_kursi_chiasmus']:
+            print(f"  [{r['ring']:8}] {r['arabic']} -> {r['theme']}")
+        print(f"\nBakara Suresi 286 Ayetlik Makro Halka: 143. Ayet (Vasat Ümmet):")
+        print(f"  {ch['bakara_macro_ring']['ring_significance']}")
+        return
+
+    if args.phonetics:
+        print_banner()
+        ph = structural_engine.compute_phonetics_and_acoustics()
+        print(f"🎶 {ph['title']}\n")
+        print(f"• {ph['top_4_dominance']}")
+        print(f"• {ph['nun_dominance']}\n")
+        print("En Yaygın 10 Fâsıla Harfi:")
+        for f in ph['top_fawasil']:
+            print(f"  • Harf [{f['letter']}]: {f['count']:4d} kez (%{f['percentage']} )")
+        return
+
+    if args.structural:
+        print_banner()
+        print("MİRAT İleri Düzey Çok Boyutlu Yapısal Analiz Motoru Çalıştırılıyor...\n")
+        structural_engine.generate_master_report()
+        return
+
     if args.antonyms:
         print_banner()
-        print("Zıt Anlamlı Kelimelerin 7 Kural ile Analizi Çalıştırılıyor...\n")
         antonym_engine.generate_comprehensive_report()
-        res = antonym_engine.run_full_analysis()
-        if args.json:
-            print(json.dumps(res, indent=2, ensure_ascii=False))
-        else:
-            r1 = res['rule1_root_exact_parity']
-            print(f"📌 {r1['title']}:")
-            for item in r1['items']:
-                print(f"  • {item['name']:35} | {item['count1']:3d} vs {item['count2']:3d} | VSI: %{item['vsi_score']} | {item['p_value']}")
-            print("\n" + "="*50 + "\n")
-            r4 = res['rule4_tibak_co_occurrence']
-            print(f"📌 {r4['title']}:")
-            for item in r4['items']:
-                print(f"  • {item['pair_name']:35} | Aynı Ayette: {item['same_ayah_count']:3d} Ayet | PMI: {item['pmi']}")
         return
 
     if args.synonyms:
         print_banner()
         r6 = antonym_engine.analyze_rule6_synonym_clusters()
-        print(f"📌 {r6['title']}\n")
         for cl in r6['clusters']:
             print(f"🔹 {cl['cluster_name']}:")
             for m in cl['members']:
@@ -82,9 +134,10 @@ def main():
 
     if args.mine or args.report:
         print_banner()
-        print("MİRAT Örüntü Madenciliği ve Raporlama Motoru Çalıştırılıyor...\n")
+        print("MİRAT Tüm Analiz, Örüntü ve İleri Yapısal Motorlar Çalıştırılıyor...\n")
         miner.generate_master_catalog()
         antonym_engine.generate_comprehensive_report()
+        structural_engine.generate_master_report()
         run_all_and_save()
         print("\n✅ Tüm MİRAT Külliyatı, Raporları ve PDF Katalogları Başarıyla Güncellendi!")
         return
@@ -107,29 +160,7 @@ def main():
         print_banner()
         run_all_and_save()
         return
-        
-    if args.layer:
-        print_banner()
-        print(f"Katman {args.layer} Analizi Başlatılıyor...\n")
-        layer_map = {
-            1: analyze_layer_1,
-            2: analyze_layer_2,
-            3: analyze_layer_3,
-            4: analyze_layer_4,
-            5: analyze_layer_5
-        }
-        res = layer_map[args.layer](db)
-        if args.json:
-            print(json.dumps(res, indent=2, ensure_ascii=False))
-        else:
-            for k, v in res.items():
-                print(f"🔹 {v.get('title', k)}:")
-                for sub_k, sub_v in v.items():
-                    if sub_k != 'title':
-                        print(f"   • {sub_k}: {sub_v}")
-                print("-" * 50)
-        return
-        
+
     if args.root:
         print_banner()
         segments = db.search_root(args.root)
@@ -141,23 +172,8 @@ def main():
         print(f"• Toplam Geçiş Sayısı (Segment): {len(segments)}")
         print(f"• Farklı Ayet Sayısı: {len(ayahs)}")
         print(f"• POS Dağılımı (İsim/Fiil): {poses}")
-        print("\nÖrnek İlk 5 Geçiş:")
-        for s in segments[:5]:
-            print(f"   [{s['location']}] {s['form']} ({s['lemma']}) - Sure {s['surah']}, Ayet {s['ayah']}")
         return
-        
-    if args.lemma:
-        print_banner()
-        segments = db.search_lemma(args.lemma)
-        ayahs = set((s['surah'], s['ayah']) for s in segments)
-        print(f"🔍 Lemma Arama Sonucu: [{args.lemma}]")
-        print(f"• Toplam Geçiş Sayısı: {len(segments)}")
-        print(f"• Farklı Ayet Sayısı: {len(ayahs)}")
-        print("\nÖrnek İlk 5 Geçiş:")
-        for s in segments[:5]:
-            print(f"   [{s['location']}] {s['form']} - Sure {s['surah']}, Ayet {s['ayah']}")
-        return
-        
+
     if args.compare:
         print_banner()
         r1, r2 = args.compare[0], args.compare[1]
@@ -165,13 +181,9 @@ def main():
         c2 = len(db.search_root(r2))
         z_res = z_test_equal_frequencies(c1, c2)
         print(f"⚖️ Kök Karşılaştırma Analizi: [{r1}] vs [{r2}]")
-        print(f"• [{r1}] Frekansı: {c1}")
-        print(f"• [{r2}] Frekansı: {c2}")
-        print(f"• Toplam: {c1 + c2}")
-        print(f"• Oran: %{round((c1/(c1+c2))*100, 2) if (c1+c2)>0 else 0} vs %{round((c2/(c1+c2))*100, 2) if (c1+c2)>0 else 0}")
-        print(f"• Z-Skoru: {round(z_res['z_score'], 4)}")
-        print(f"• p-Değeri: {round(z_res['p_value'], 4)}")
-        print(f"• İstatistiki Simetri (p >= 0.05): {'EVET (Simetrik)' if z_res['is_symmetric'] else 'HAYIR (Asimetrik)'}")
+        print(f"• [{r1}] Frekansı: {c1} | [{r2}] Frekansı: {c2}")
+        print(f"• Z-Skoru: {round(z_res['z_score'], 4)} | p-Değeri: {round(z_res['p_value'], 4)}")
+        print(f"• Simetrik: {'EVET' if z_res['is_symmetric'] else 'HAYIR'}")
         return
 
 if __name__ == "__main__":

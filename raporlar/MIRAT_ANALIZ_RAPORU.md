@@ -1,7 +1,7 @@
 # MİRAT (Metin İçi Rastlantısallık ve Analiz Teknolojisi)
 ## Kur'an-ı Kerim'in Kelime Frekans Veritabanı ve Matematiksel Örüntülerinin Yapay Zekâ Destekli Analiz Raporu
 
-> **Tarih:** 22.08.2026 | **Proje:** MİRAT Bilimsel Araştırma Grubu | **Veri Seti:** Quranic Arabic Corpus (130.030 Morfolojik Segment, 77.429 Kelime, 1.651 Kök)
+> **Tarih:** 19.09.2026 | **Proje:** MİRAT Bilimsel Araştırma Grubu | **Veri Seti:** Quranic Arabic Corpus (130.030 Morfolojik Segment, 77.429 Kelime, 1.651 Kök)
 
 ---
 

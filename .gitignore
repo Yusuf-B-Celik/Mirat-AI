@@ -16,6 +16,11 @@ venv/
 ENV/
 env/
 
+# Temporary HTML render files
+*.html
+raporlar/*.html
+kuran/*.html
+
 # OS Files
 .DS_Store
 Thumbs.db

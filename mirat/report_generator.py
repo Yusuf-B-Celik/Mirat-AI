@@ -151,8 +151,8 @@ def generate_markdown_report(all_results):
     
     return "\n".join(md)
 
-def generate_pdf_report(md_content, output_pdf="MIRAT_ANALIZ_RAPORU.pdf"):
-    html_file = "MIRAT_ANALIZ_RAPORU.html"
+def generate_pdf_report(md_content, output_pdf="raporlar/MIRAT_ANALIZ_RAPORU.pdf"):
+    html_file = "raporlar/MIRAT_ANALIZ_RAPORU.html"
     
     # Convert markdown to clean HTML with styling
     html = f"""<!DOCTYPE html>
@@ -373,15 +373,15 @@ def run_all_and_save():
     
     md_content = generate_markdown_report(all_results)
     
-    md_file = "MIRAT_ANALIZ_RAPORU.md"
+    md_file = "raporlar/MIRAT_ANALIZ_RAPORU.md"
     with open(md_file, "w", encoding="utf-8") as f:
         f.write(md_content)
     print(f"Markdown Raporu Üretildi: {md_file} ({os.path.getsize(md_file):,} byte)")
     
-    generate_pdf_report(md_content, "MIRAT_ANALIZ_RAPORU.pdf")
+    generate_pdf_report(md_content, "raporlar/MIRAT_ANALIZ_RAPORU.pdf")
     
     # Save JSON data as well
-    json_file = "mirat_analiz_verileri.json"
+    json_file = "veriler/mirat_analiz_verileri.json"
     with open(json_file, "w", encoding="utf-8") as jf:
         json.dump(all_results, jf, ensure_ascii=False, indent=2)
     print(f"JSON Veri Seti Üretildi: {json_file}")

@@ -1,0 +1,162 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 360" width="100%" height="100%">
+<defs>
+<linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+<stop offset="0%" stop-color="#0f172a"/><stop offset="100%" stop-color="#1e293b"/>
+</linearGradient>
+<linearGradient id="barGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+<stop offset="0%" stop-color="#0f766e" stop-opacity="0.3"/>
+<stop offset="100%" stop-color="#14b8a6" stop-opacity="0.9"/>
+</linearGradient>
+</defs>
+<rect width="900" height="360" fill="url(#bgGrad)" rx="10"/>
+<text x="450.0" y="24" fill="#5eead4" font-family="sans-serif" font-size="13" font-weight="bold" text-anchor="middle">MİRAT: 114 Sure Ayet Sayıları Dalga Formu ve Tepe Noktaları</text>
+<line x1="50" y1="273.3333333333333" x2="850" y2="273.3333333333333" stroke="#334155" stroke-dasharray="3,3" stroke-width="0.8"/>
+<text x="42" y="276.3333333333333" fill="#64748b" font-family="monospace" font-size="8" text-anchor="end">50</text>
+<line x1="50" y1="226.66666666666669" x2="850" y2="226.66666666666669" stroke="#334155" stroke-dasharray="3,3" stroke-width="0.8"/>
+<text x="42" y="229.66666666666669" fill="#64748b" font-family="monospace" font-size="8" text-anchor="end">100</text>
+<line x1="50" y1="180.0" x2="850" y2="180.0" stroke="#334155" stroke-dasharray="3,3" stroke-width="0.8"/>
+<text x="42" y="183.0" fill="#64748b" font-family="monospace" font-size="8" text-anchor="end">150</text>
+<line x1="50" y1="133.33333333333334" x2="850" y2="133.33333333333334" stroke="#334155" stroke-dasharray="3,3" stroke-width="0.8"/>
+<text x="42" y="136.33333333333334" fill="#64748b" font-family="monospace" font-size="8" text-anchor="end">200</text>
+<line x1="50" y1="86.66666666666666" x2="850" y2="86.66666666666666" stroke="#334155" stroke-dasharray="3,3" stroke-width="0.8"/>
+<text x="42" y="89.66666666666666" fill="#64748b" font-family="monospace" font-size="8" text-anchor="end">250</text>
+<rect x="50.0" y="313.46666666666664" width="6.017543859649122" height="6.533333333333333" fill="url(#barGrad)"/>
+<rect x="57.01754385964912" y="53.06666666666666" width="6.017543859649122" height="266.93333333333334" fill="url(#barGrad)"/>
+<rect x="64.03508771929825" y="133.33333333333334" width="6.017543859649122" height="186.66666666666666" fill="url(#barGrad)"/>
+<rect x="71.05263157894737" y="155.73333333333332" width="6.017543859649122" height="164.26666666666668" fill="url(#barGrad)"/>
+<rect x="78.0701754385965" y="208.0" width="6.017543859649122" height="112.0" fill="url(#barGrad)"/>
+<rect x="85.08771929824562" y="166.0" width="6.017543859649122" height="154.0" fill="url(#barGrad)"/>
+<rect x="92.10526315789474" y="127.73333333333335" width="6.017543859649122" height="192.26666666666665" fill="url(#barGrad)"/>
+<rect x="99.12280701754386" y="250.0" width="6.017543859649122" height="70.0" fill="url(#barGrad)"/>
+<rect x="106.14035087719299" y="199.60000000000002" width="6.017543859649122" height="120.39999999999999" fill="url(#barGrad)"/>
+<rect x="113.15789473684211" y="218.26666666666665" width="6.017543859649122" height="101.73333333333333" fill="url(#barGrad)"/>
+<rect x="120.17543859649122" y="205.2" width="6.017543859649122" height="114.8" fill="url(#barGrad)"/>
+<rect x="127.19298245614034" y="216.4" width="6.017543859649122" height="103.6" fill="url(#barGrad)"/>
+<rect x="134.21052631578948" y="279.8666666666667" width="6.017543859649122" height="40.13333333333333" fill="url(#barGrad)"/>
+<rect x="141.22807017543857" y="271.4666666666667" width="6.017543859649122" height="48.53333333333333" fill="url(#barGrad)"/>
+<rect x="148.24561403508773" y="227.6" width="6.017543859649122" height="92.4" fill="url(#barGrad)"/>
+<rect x="155.26315789473682" y="200.53333333333333" width="6.017543859649122" height="119.46666666666667" fill="url(#barGrad)"/>
+<rect x="162.28070175438597" y="216.4" width="6.017543859649122" height="103.6" fill="url(#barGrad)"/>
+<rect x="169.29824561403507" y="217.33333333333334" width="6.017543859649122" height="102.66666666666666" fill="url(#barGrad)"/>
+<rect x="176.31578947368422" y="228.53333333333333" width="6.017543859649122" height="91.46666666666667" fill="url(#barGrad)"/>
+<rect x="183.33333333333331" y="194.0" width="6.017543859649122" height="126.0" fill="url(#barGrad)"/>
+<rect x="190.35087719298244" y="215.46666666666667" width="6.017543859649122" height="104.53333333333333" fill="url(#barGrad)"/>
+<rect x="197.36842105263156" y="247.2" width="6.017543859649122" height="72.8" fill="url(#barGrad)"/>
+<rect x="204.38596491228068" y="209.86666666666667" width="6.017543859649122" height="110.13333333333333" fill="url(#barGrad)"/>
+<rect x="211.4035087719298" y="260.26666666666665" width="6.017543859649122" height="59.733333333333334" fill="url(#barGrad)"/>
+<rect x="218.42105263157893" y="248.13333333333333" width="6.017543859649122" height="71.86666666666666" fill="url(#barGrad)"/>
+<rect x="225.43859649122805" y="108.13333333333333" width="6.017543859649122" height="211.86666666666667" fill="url(#barGrad)"/>
+<rect x="232.45614035087718" y="233.2" width="6.017543859649122" height="86.8" fill="url(#barGrad)"/>
+<rect x="239.4736842105263" y="237.86666666666667" width="6.017543859649122" height="82.13333333333334" fill="url(#barGrad)"/>
+<rect x="246.49122807017542" y="255.6" width="6.017543859649122" height="64.4" fill="url(#barGrad)"/>
+<rect x="253.50877192982455" y="264.0" width="6.017543859649122" height="56.0" fill="url(#barGrad)"/>
+<rect x="260.52631578947364" y="288.26666666666665" width="6.017543859649122" height="31.73333333333333" fill="url(#barGrad)"/>
+<rect x="267.5438596491228" y="292.0" width="6.017543859649122" height="28.0" fill="url(#barGrad)"/>
+<rect x="274.56140350877195" y="251.86666666666667" width="6.017543859649122" height="68.13333333333334" fill="url(#barGrad)"/>
+<rect x="281.57894736842104" y="269.6" width="6.017543859649122" height="50.4" fill="url(#barGrad)"/>
+<rect x="288.59649122807014" y="278.0" width="6.017543859649122" height="42.0" fill="url(#barGrad)"/>
+<rect x="295.6140350877193" y="242.53333333333333" width="6.017543859649122" height="77.46666666666667" fill="url(#barGrad)"/>
+<rect x="302.63157894736844" y="150.13333333333333" width="6.017543859649122" height="169.86666666666667" fill="url(#barGrad)"/>
+<rect x="309.64912280701753" y="237.86666666666667" width="6.017543859649122" height="82.13333333333334" fill="url(#barGrad)"/>
+<rect x="316.66666666666663" y="250.0" width="6.017543859649122" height="70.0" fill="url(#barGrad)"/>
+<rect x="323.6842105263158" y="240.66666666666669" width="6.017543859649122" height="79.33333333333333" fill="url(#barGrad)"/>
+<rect x="330.7017543859649" y="269.6" width="6.017543859649122" height="50.4" fill="url(#barGrad)"/>
+<rect x="337.719298245614" y="270.5333333333333" width="6.017543859649122" height="49.46666666666667" fill="url(#barGrad)"/>
+<rect x="344.7368421052631" y="236.93333333333334" width="6.017543859649122" height="83.06666666666668" fill="url(#barGrad)"/>
+<rect x="351.7543859649123" y="264.93333333333334" width="6.017543859649122" height="55.06666666666666" fill="url(#barGrad)"/>
+<rect x="358.77192982456137" y="285.4666666666667" width="6.017543859649122" height="34.53333333333333" fill="url(#barGrad)"/>
+<rect x="365.7894736842105" y="287.3333333333333" width="6.017543859649122" height="32.666666666666664" fill="url(#barGrad)"/>
+<rect x="372.8070175438596" y="284.5333333333333" width="6.017543859649122" height="35.46666666666667" fill="url(#barGrad)"/>
+<rect x="379.82456140350877" y="292.93333333333334" width="6.017543859649122" height="27.066666666666666" fill="url(#barGrad)"/>
+<rect x="386.84210526315786" y="303.2" width="6.017543859649122" height="16.8" fill="url(#barGrad)"/>
+<rect x="393.859649122807" y="278.0" width="6.017543859649122" height="42.0" fill="url(#barGrad)"/>
+<rect x="400.8771929824561" y="264.0" width="6.017543859649122" height="56.0" fill="url(#barGrad)"/>
+<rect x="407.89473684210526" y="274.26666666666665" width="6.017543859649122" height="45.733333333333334" fill="url(#barGrad)"/>
+<rect x="414.91228070175436" y="262.1333333333333" width="6.017543859649122" height="57.86666666666667" fill="url(#barGrad)"/>
+<rect x="421.9298245614035" y="268.6666666666667" width="6.017543859649122" height="51.33333333333333" fill="url(#barGrad)"/>
+<rect x="428.9473684210526" y="247.2" width="6.017543859649122" height="72.8" fill="url(#barGrad)"/>
+<rect x="435.96491228070175" y="230.39999999999998" width="6.017543859649122" height="89.60000000000001" fill="url(#barGrad)"/>
+<rect x="442.98245614035085" y="292.93333333333334" width="6.017543859649122" height="27.066666666666666" fill="url(#barGrad)"/>
+<rect x="450.0" y="299.46666666666664" width="6.017543859649122" height="20.533333333333335" fill="url(#barGrad)"/>
+<rect x="457.0175438596491" y="297.6" width="6.017543859649122" height="22.400000000000002" fill="url(#barGrad)"/>
+<rect x="464.03508771929825" y="307.8666666666667" width="6.017543859649122" height="12.133333333333333" fill="url(#barGrad)"/>
+<rect x="471.05263157894734" y="306.93333333333334" width="6.017543859649122" height="13.066666666666666" fill="url(#barGrad)"/>
+<rect x="478.0701754385965" y="309.73333333333335" width="6.017543859649122" height="10.266666666666667" fill="url(#barGrad)"/>
+<rect x="485.0877192982456" y="309.73333333333335" width="6.017543859649122" height="10.266666666666667" fill="url(#barGrad)"/>
+<rect x="492.10526315789474" y="303.2" width="6.017543859649122" height="16.8" fill="url(#barGrad)"/>
+<rect x="499.12280701754383" y="308.8" width="6.017543859649122" height="11.200000000000001" fill="url(#barGrad)"/>
+<rect x="506.14035087719293" y="308.8" width="6.017543859649122" height="11.200000000000001" fill="url(#barGrad)"/>
+<rect x="513.1578947368421" y="292.0" width="6.017543859649122" height="28.0" fill="url(#barGrad)"/>
+<rect x="520.1754385964912" y="271.4666666666667" width="6.017543859649122" height="48.53333333333333" fill="url(#barGrad)"/>
+<rect x="527.1929824561403" y="271.4666666666667" width="6.017543859649122" height="48.53333333333333" fill="url(#barGrad)"/>
+<rect x="534.2105263157894" y="278.93333333333334" width="6.017543859649122" height="41.06666666666667" fill="url(#barGrad)"/>
+<rect x="541.2280701754386" y="293.8666666666667" width="6.017543859649122" height="26.133333333333333" fill="url(#barGrad)"/>
+<rect x="548.2456140350877" y="293.8666666666667" width="6.017543859649122" height="26.133333333333333" fill="url(#barGrad)"/>
+<rect x="555.2631578947369" y="301.3333333333333" width="6.017543859649122" height="18.666666666666668" fill="url(#barGrad)"/>
+<rect x="562.280701754386" y="267.73333333333335" width="6.017543859649122" height="52.266666666666666" fill="url(#barGrad)"/>
+<rect x="569.2982456140351" y="282.6666666666667" width="6.017543859649122" height="37.333333333333336" fill="url(#barGrad)"/>
+<rect x="576.3157894736842" y="291.06666666666666" width="6.017543859649122" height="28.933333333333334" fill="url(#barGrad)"/>
+<rect x="583.3333333333333" y="273.3333333333333" width="6.017543859649122" height="46.666666666666664" fill="url(#barGrad)"/>
+<rect x="590.3508771929825" y="282.6666666666667" width="6.017543859649122" height="37.333333333333336" fill="url(#barGrad)"/>
+<rect x="597.3684210526316" y="277.06666666666666" width="6.017543859649122" height="42.93333333333333" fill="url(#barGrad)"/>
+<rect x="604.3859649122807" y="280.8" width="6.017543859649122" height="39.2" fill="url(#barGrad)"/>
+<rect x="611.4035087719298" y="292.93333333333334" width="6.017543859649122" height="27.066666666666666" fill="url(#barGrad)"/>
+<rect x="618.421052631579" y="302.26666666666665" width="6.017543859649122" height="17.733333333333334" fill="url(#barGrad)"/>
+<rect x="625.438596491228" y="286.4" width="6.017543859649122" height="33.6" fill="url(#barGrad)"/>
+<rect x="632.4561403508771" y="296.6666666666667" width="6.017543859649122" height="23.333333333333332" fill="url(#barGrad)"/>
+<rect x="639.4736842105262" y="299.46666666666664" width="6.017543859649122" height="20.533333333333335" fill="url(#barGrad)"/>
+<rect x="646.4912280701755" y="304.1333333333333" width="6.017543859649122" height="15.866666666666665" fill="url(#barGrad)"/>
+<rect x="653.5087719298245" y="302.26666666666665" width="6.017543859649122" height="17.733333333333334" fill="url(#barGrad)"/>
+<rect x="660.5263157894736" y="295.73333333333335" width="6.017543859649122" height="24.266666666666666" fill="url(#barGrad)"/>
+<rect x="667.5438596491227" y="292.0" width="6.017543859649122" height="28.0" fill="url(#barGrad)"/>
+<rect x="674.561403508772" y="301.3333333333333" width="6.017543859649122" height="18.666666666666668" fill="url(#barGrad)"/>
+<rect x="681.578947368421" y="306.0" width="6.017543859649122" height="14.0" fill="url(#barGrad)"/>
+<rect x="688.5964912280701" y="300.4" width="6.017543859649122" height="19.6" fill="url(#barGrad)"/>
+<rect x="695.6140350877192" y="309.73333333333335" width="6.017543859649122" height="10.266666666666667" fill="url(#barGrad)"/>
+<rect x="702.6315789473684" y="312.53333333333336" width="6.017543859649122" height="7.466666666666667" fill="url(#barGrad)"/>
+<rect x="709.6491228070175" y="312.53333333333336" width="6.017543859649122" height="7.466666666666667" fill="url(#barGrad)"/>
+<rect x="716.6666666666666" y="302.26666666666665" width="6.017543859649122" height="17.733333333333334" fill="url(#barGrad)"/>
+<rect x="723.6842105263157" y="315.3333333333333" width="6.017543859649122" height="4.666666666666667" fill="url(#barGrad)"/>
+<rect x="730.7017543859648" y="312.53333333333336" width="6.017543859649122" height="7.466666666666667" fill="url(#barGrad)"/>
+<rect x="737.719298245614" y="312.53333333333336" width="6.017543859649122" height="7.466666666666667" fill="url(#barGrad)"/>
+<rect x="744.7368421052631" y="309.73333333333335" width="6.017543859649122" height="10.266666666666667" fill="url(#barGrad)"/>
+<rect x="751.7543859649122" y="309.73333333333335" width="6.017543859649122" height="10.266666666666667" fill="url(#barGrad)"/>
+<rect x="758.7719298245613" y="312.53333333333336" width="6.017543859649122" height="7.466666666666667" fill="url(#barGrad)"/>
+<rect x="765.7894736842105" y="317.2" width="6.017543859649122" height="2.8000000000000003" fill="url(#barGrad)"/>
+<rect x="772.8070175438596" y="311.6" width="6.017543859649122" height="8.4" fill="url(#barGrad)"/>
+<rect x="779.8245614035087" y="315.3333333333333" width="6.017543859649122" height="4.666666666666667" fill="url(#barGrad)"/>
+<rect x="786.8421052631578" y="316.26666666666665" width="6.017543859649122" height="3.7333333333333334" fill="url(#barGrad)"/>
+<rect x="793.859649122807" y="313.46666666666664" width="6.017543859649122" height="6.533333333333333" fill="url(#barGrad)"/>
+<rect x="800.8771929824561" y="317.2" width="6.017543859649122" height="2.8000000000000003" fill="url(#barGrad)"/>
+<rect x="807.8947368421052" y="314.4" width="6.017543859649122" height="5.6000000000000005" fill="url(#barGrad)"/>
+<rect x="814.9122807017543" y="317.2" width="6.017543859649122" height="2.8000000000000003" fill="url(#barGrad)"/>
+<rect x="821.9298245614035" y="315.3333333333333" width="6.017543859649122" height="4.666666666666667" fill="url(#barGrad)"/>
+<rect x="828.9473684210526" y="316.26666666666665" width="6.017543859649122" height="3.7333333333333334" fill="url(#barGrad)"/>
+<rect x="835.9649122807017" y="315.3333333333333" width="6.017543859649122" height="4.666666666666667" fill="url(#barGrad)"/>
+<rect x="842.9824561403508" y="314.4" width="6.017543859649122" height="5.6000000000000005" fill="url(#barGrad)"/>
+<polyline points="60.526315789473685,53.06666666666666 95.6140350877193,127.73333333333335 109.64912280701755,199.60000000000002 123.68421052631578,205.2 158.77192982456137,200.53333333333333 186.84210526315786,194.0 207.89473684210523,209.86666666666667 228.9473684210526,108.13333333333333 278.0701754385965,251.86666666666667 306.140350877193,150.13333333333333 327.1929824561403,240.66666666666669 348.24561403508767,236.93333333333334 404.38596491228066,264.0 418.4210526315789,262.1333333333333 439.4736842105263,230.39999999999998 523.6842105263157,271.4666666666667 530.7017543859648,271.4666666666667 565.7894736842105,267.73333333333335 586.8421052631578,273.3333333333333" fill="none" stroke="#f59e0b" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="60.526315789473685" cy="53.06666666666666" r="5" fill="#f43f5e" stroke="#ffffff" stroke-width="1.2"/>
+<text x="60.526315789473685" y="44.06666666666666" fill="#fbbf24" font-family="sans-serif" font-size="8.5" font-weight="bold" text-anchor="middle">2. Bakara (286)</text>
+<circle cx="95.6140350877193" cy="127.73333333333335" r="5" fill="#f43f5e" stroke="#ffffff" stroke-width="1.2"/>
+<text x="95.6140350877193" y="118.73333333333335" fill="#fbbf24" font-family="sans-serif" font-size="8.5" font-weight="bold" text-anchor="middle">7. A'râf (206)</text>
+<circle cx="109.64912280701755" cy="199.60000000000002" r="3" fill="#38bdf8" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="123.68421052631578" cy="205.2" r="3" fill="#38bdf8" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="158.77192982456137" cy="200.53333333333333" r="3" fill="#38bdf8" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="186.84210526315786" cy="194.0" r="3" fill="#38bdf8" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="207.89473684210523" cy="209.86666666666667" r="3" fill="#38bdf8" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="228.9473684210526" cy="108.13333333333333" r="5" fill="#f43f5e" stroke="#ffffff" stroke-width="1.2"/>
+<text x="228.9473684210526" y="99.13333333333333" fill="#fbbf24" font-family="sans-serif" font-size="8.5" font-weight="bold" text-anchor="middle">26. Şuarâ (227)</text>
+<circle cx="278.0701754385965" cy="251.86666666666667" r="3" fill="#38bdf8" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="306.140350877193" cy="150.13333333333333" r="5" fill="#f43f5e" stroke="#ffffff" stroke-width="1.2"/>
+<text x="306.140350877193" y="141.13333333333333" fill="#fbbf24" font-family="sans-serif" font-size="8.5" font-weight="bold" text-anchor="middle">37. Sâffât (182)</text>
+<circle cx="327.1929824561403" cy="240.66666666666669" r="3" fill="#38bdf8" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="348.24561403508767" cy="236.93333333333334" r="3" fill="#38bdf8" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="404.38596491228066" cy="264.0" r="3" fill="#38bdf8" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="418.4210526315789" cy="262.1333333333333" r="3" fill="#38bdf8" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="439.4736842105263" cy="230.39999999999998" r="3" fill="#38bdf8" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="523.6842105263157" cy="271.4666666666667" r="3" fill="#38bdf8" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="530.7017543859648" cy="271.4666666666667" r="3" fill="#38bdf8" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="565.7894736842105" cy="267.73333333333335" r="3" fill="#38bdf8" stroke="#ffffff" stroke-width="1.2"/>
+<circle cx="586.8421052631578" cy="273.3333333333333" r="3" fill="#38bdf8" stroke="#ffffff" stroke-width="1.2"/>
+<text x="450.0" y="348" fill="#94a3b8" font-family="sans-serif" font-size="8.5" text-anchor="middle">Tepe Noktaları: 2. Bakara (286 - Elif) | 7. A'râf (206 - Lâm) | 26. Şuarâ (227 - Lâm) | 37. Sâffât (182 - Hâ)</text>
+</svg>

@@ -623,7 +623,7 @@ class MiratPatternMiner:
 
         return {'category_title': '10. Leksikal Analiz ve Zipf Kanunu Doğrulaması', 'patterns': patterns}
 
-    def generate_master_catalog(self, output_md="MIRAT_YUZLERCE_ORUNTU_KATALOGU.md", output_pdf="MIRAT_YUZLERCE_ORUNTU_KATALOGU.pdf"):
+    def generate_master_catalog(self, output_md="raporlar/MIRAT_YUZLERCE_ORUNTU_KATALOGU.md", output_pdf="raporlar/MIRAT_YUZLERCE_ORUNTU_KATALOGU.pdf"):
         all_cats = self.run_all_categories()
         
         md = []
@@ -665,13 +665,13 @@ class MiratPatternMiner:
         print(f"Master Markdown Kataloğu Üretildi: {output_md} ({os.path.getsize(output_md):,} byte)")
         
         # Save JSON
-        json_file = "mirat_oruntuler_veritabani.json"
+        json_file = "veriler/mirat_oruntuler_veritabani.json"
         with open(json_file, "w", encoding="utf-8") as jf:
             json.dump(all_cats, jf, ensure_ascii=False, indent=2)
         print(f"Örüntüler JSON Veri Seti Üretildi: {json_file}")
         
         # Generate PDF
-        html_file = "MIRAT_YUZLERCE_ORUNTU_KATALOGU.html"
+        html_file = "raporlar/MIRAT_YUZLERCE_ORUNTU_KATALOGU.html"
         html = f"""<!DOCTYPE html>
 <html lang="tr">
 <head>

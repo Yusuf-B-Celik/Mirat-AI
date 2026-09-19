@@ -318,7 +318,7 @@ class MiratAntonymSynonymEngine:
         rankings.sort(key=lambda x: (-x['vsi_percent'], -x['count1']))
         return {'title': 'Kural 7: Doğrulanmış Simetri İndeksi (VSI) ve Liderlik Sıralaması', 'rankings': rankings}
 
-    def generate_comprehensive_report(self, output_md="MIRAT_ZIT_VE_ES_ANLAMLI_ANALIZI.md", output_pdf="MIRAT_ZIT_VE_ES_ANLAMLI_ANALIZI.pdf"):
+    def generate_comprehensive_report(self, output_md="raporlar/MIRAT_ZIT_VE_ES_ANLAMLI_ANALIZI.md", output_pdf="raporlar/MIRAT_ZIT_VE_ES_ANLAMLI_ANALIZI.pdf"):
         res = self.run_full_analysis()
         
         md = []
@@ -419,13 +419,13 @@ class MiratAntonymSynonymEngine:
         print(f"Zıt ve Eş Anlamlılar Raporu Üretildi: {output_md} ({os.path.getsize(output_md):,} byte)")
 
         # Save JSON
-        json_file = "mirat_zit_ve_es_anlamlilar.json"
+        json_file = "veriler/mirat_zit_ve_es_anlamlilar.json"
         with open(json_file, "w", encoding="utf-8") as jf:
             json.dump(res, jf, ensure_ascii=False, indent=2)
         print(f"JSON Veri Seti Üretildi: {json_file}")
 
         # Generate PDF
-        html_file = "MIRAT_ZIT_VE_ES_ANLAMLI_ANALIZI.html"
+        html_file = "raporlar/MIRAT_ZIT_VE_ES_ANLAMLI_ANALIZI.html"
         html = f"""<!DOCTYPE html>
 <html lang="tr">
 <head>

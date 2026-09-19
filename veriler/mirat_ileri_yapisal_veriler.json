@@ -1,0 +1,341 @@
+{
+  "waveform_analysis": {
+    "title": "114 Surenin Ayet Sayıları Dalga Grafiği ve \"Lafza-i Celal\" (الله) Tepe Noktaları",
+    "total_surahs": 114,
+    "max_verse_count": 286,
+    "min_verse_count": 3,
+    "major_peaks": [
+      {
+        "surah_num": 2,
+        "surah_name": "Bakara",
+        "verse_count": 286
+      },
+      {
+        "surah_num": 7,
+        "surah_name": "A'râf",
+        "verse_count": 206
+      },
+      {
+        "surah_num": 9,
+        "surah_name": "Tevbe",
+        "verse_count": 129
+      },
+      {
+        "surah_num": 11,
+        "surah_name": "Hûd",
+        "verse_count": 123
+      },
+      {
+        "surah_num": 16,
+        "surah_name": "Nahl",
+        "verse_count": 128
+      },
+      {
+        "surah_num": 20,
+        "surah_name": "Tâhâ",
+        "verse_count": 135
+      },
+      {
+        "surah_num": 23,
+        "surah_name": "Mü'minûn",
+        "verse_count": 118
+      },
+      {
+        "surah_num": 26,
+        "surah_name": "Şuarâ",
+        "verse_count": 227
+      },
+      {
+        "surah_num": 33,
+        "surah_name": "Ahzâb",
+        "verse_count": 73
+      },
+      {
+        "surah_num": 37,
+        "surah_name": "Sâffât",
+        "verse_count": 182
+      },
+      {
+        "surah_num": 40,
+        "surah_name": "Mü'min (Gâfir)",
+        "verse_count": 85
+      },
+      {
+        "surah_num": 43,
+        "surah_name": "Zuhruf",
+        "verse_count": 89
+      },
+      {
+        "surah_num": 51,
+        "surah_name": "Zâriyât",
+        "verse_count": 60
+      },
+      {
+        "surah_num": 53,
+        "surah_name": "Necm",
+        "verse_count": 62
+      },
+      {
+        "surah_num": 56,
+        "surah_name": "Vâkı'a",
+        "verse_count": 96
+      },
+      {
+        "surah_num": 68,
+        "surah_name": "Kalem",
+        "verse_count": 52
+      },
+      {
+        "surah_num": 69,
+        "surah_name": "Hâkka",
+        "verse_count": 52
+      },
+      {
+        "surah_num": 74,
+        "surah_name": "Müddessir",
+        "verse_count": 56
+      },
+      {
+        "surah_num": 77,
+        "surah_name": "Mürselât",
+        "verse_count": 50
+      }
+    ],
+    "silhouette_strokes": [
+      {
+        "letter": "Elif (ا)",
+        "surah": "2. Bakara",
+        "verses": 286,
+        "role": "İlk dikey bağımsız direk"
+      },
+      {
+        "letter": "Birinci Lâm (ل)",
+        "surah": "7. A'râf",
+        "verses": 206,
+        "role": "İkinci dikey kule"
+      },
+      {
+        "letter": "İkinci Lâm (ل)",
+        "surah": "26. Şuarâ",
+        "verses": 227,
+        "role": "Üçüncü dikey kule"
+      },
+      {
+        "letter": "Hâ (ـه)",
+        "surah": "37. Sâffât (182) -> 114. Nâs",
+        "verses": "182'den 6'ya iniş",
+        "role": "Kapanış kavisli döngüsü"
+      }
+    ],
+    "svg_file": "quran_waveform_silhouette.svg",
+    "scientific_evaluation": "Kur'an-ı Kerim'deki surelerin ayet sayıları peş peşe çizildiğinde rastgele bir gürültü değil; tepe noktaları (286, 206, 227 ve 182) birleştirildiğinde hat sanatındaki Arapça \"Allah\" (الله) lafzının üç dikey sütun (Elif, Lam, Lam) ve bir kavisli döngüden (He) oluşan silüetine morfolojik bir benzerlik sergilemektedir."
+  },
+  "parity_matrix": {
+    "title": "Milan Sulc Parite (Tek/Çift) Simetri Teoremi",
+    "total_surahs": 114,
+    "total_verses": 6236,
+    "total_surah_index_sum": 6555,
+    "even_count": 57,
+    "odd_count": 57,
+    "is_exact_half": true,
+    "sum_of_even_sums": 6236,
+    "sum_of_odd_sums": 6555,
+    "even_equals_total_verses": true,
+    "odd_equals_total_surah_indices": true,
+    "parity_theorem_summary": "114 surenin tam 57'si ÇİFT toplam (Sure No + Ayet), tam 57'si TEK toplam verir. 57 Çift toplamın genel toplamı tam 6,236'tür (Kur'an'daki TOPLAM AYET SAYISINA EŞİT!). 57 Tek toplamın genel toplamı tam 6,555'tir (1'den 114'e kadar SURE NUMARALARININ TOPLAMINA EŞİT!). Bu durum olasılık teorisine göre tesadüfle açıklanamayacak tam bir matematiksel kilit oluşturur."
+  },
+  "cryptographic_patterns": {
+    "title": "Kriptografik Harf Kombinasyonları ve Palindromik Simetriler",
+    "muqattaat_surah_count": 29,
+    "muqattaat_unique_letters_count": 14,
+    "muqattaat_unique_letters": "ا ح ر س ص ط ع ق ك ل م ن ه ي",
+    "alphabet_ratio": "14 / 28 (%50 - Alfabenin Tam Yarısı!)",
+    "mnemonic_sentence": "نَصٌّ حَكِيمٌ قَاطِعٌ لَهُ سِرٌّ (Hikmetli, kesin bir metindir, onda bir sır vardır)",
+    "palindromes": [
+      {
+        "verse": "36:40 (Yâsîn)",
+        "arabic": "كُلٌّ فِي فَلَكٍ",
+        "transliteration": "Küllün fî felek",
+        "meaning": "Her biri bir yörüngede (yüzüp) dönmektedir.",
+        "letter_sequence": "ك - ل - ف - ي - ف - ل - ك (K - L - F - Y - F - L - K)",
+        "is_palindrome": true,
+        "marvel": "Hem anlamı döngüsel bir yörünge hareketidir; hem de harf dizilimi baştan ve sondan okunduğunda tam bir döngüsel palindromdur!"
+      },
+      {
+        "verse": "74:3 (Müddessir)",
+        "arabic": "وَرَبَّكَ فَكَبِّرْ",
+        "transliteration": "Ve rabbeke fe-kebbir",
+        "meaning": "Ve yalnızca Rabbini yücelt / tekbir et.",
+        "letter_sequence": "ر - ب - ك - ف - ك - ب - ر (R - B - K - F - K - B - R)",
+        "is_palindrome": true,
+        "marvel": "Vav harfi atıf bağlacı çıkarıldığında metin iki taraftan da tam simetrik olarak okunur."
+      }
+    ]
+  },
+  "chiasmus_ring_composition": {
+    "title": "Halka Yapısı (Ring Composition / Chiasmus / Hiyazm) Analizi",
+    "ayat_al_kursi_chiasmus": [
+      {
+        "ring": "A",
+        "arabic": "اللَّهُ لَا إِلَٰهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ",
+        "meaning": "Allah, O'ndan başka ilah yoktur; Hayy ve Kayyûm'dur.",
+        "theme": "Mutlak Varlık ve İlahî Sıfatlar"
+      },
+      {
+        "ring": "B",
+        "arabic": "لَا تَأْخُذُهُ سِنَةٌ وَلَا نَوْمٌ",
+        "meaning": "O'nu ne bir uyuklama ne de bir uyku tutar.",
+        "theme": "Zaman ve gafletten aşkınlık / kesintisiz gözetim"
+      },
+      {
+        "ring": "C",
+        "arabic": "لَهُ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ",
+        "meaning": "Göklerde ve yerde ne varsa hepsi O'nundur.",
+        "theme": "Kozmik Mülkiyet (Gökler ve Yer)"
+      },
+      {
+        "ring": "D",
+        "arabic": "مَنْ ذَا الَّذِي يَشْفَعُ عِنْدَهُ إِلَّا بِإِذْنِهِ",
+        "meaning": "O'nun izni olmadan katında şefaat edecek kimdir?",
+        "theme": "Şefaat ve İlahî İrade"
+      },
+      {
+        "ring": "E (MERKEZ)",
+        "arabic": "يَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَهُمْ",
+        "meaning": "O, kulların önlerindekini de arkalarındakini de (geçmiş ve geleceklerini) bilir.",
+        "theme": "MUTLAK VE KUŞATICI İLİM (Merkez Sütun)"
+      },
+      {
+        "ring": "D'",
+        "arabic": "وَلَا يُحِيطُونَ بِشَيْءٍ مِنْ عِلْمِهِ إِلَّا بِمَا شَاءَ",
+        "meaning": "Onlar ise O'nun ilminden, dilediği kadarından başka hiçbir şeyi kavrayamazlar.",
+        "theme": "Kulların İlim Acziyeti (İrade)"
+      },
+      {
+        "ring": "C'",
+        "arabic": "وَسِعَ كُرْسِيُّهُ السَّمَاوَاتِ وَالْأَرْضَ",
+        "meaning": "O'nun Kürsîsi gökleri ve yeri kaplamıştır.",
+        "theme": "Kozmik Hükümranlık (Kürsî & Gökler/Yer)"
+      },
+      {
+        "ring": "B'",
+        "arabic": "وَلَا يَئُودُهُ حِفْظُهُمَا",
+        "meaning": "Onları (gökleri ve yeri) koruyup gözetmek O'na asla ağır gelmez.",
+        "theme": "Zahmet ve yorgunluktan münezzehlik / Hıfz"
+      },
+      {
+        "ring": "A'",
+        "arabic": "وَهُوَ الْعَلِيُّ الْعَظِيمُ",
+        "meaning": "O, çok yücedir, çok büyüktür (Aliyy ve Azîm'dir).",
+        "theme": "Mutlak Yücelik ve İlahî İsimler"
+      }
+    ],
+    "bakara_macro_ring": {
+      "total_verses": 286,
+      "center_verse": 143,
+      "center_arabic": "وَكَذَٰلِكَ جَعَلْنَاكُمْ أُمَّةً وَسَطًا",
+      "center_meaning": "Ve işte böylece sizi ORTADA (vasat / dengeli) bir ümmet kıldık...",
+      "ring_significance": "286 ayetlik en uzun surenin tam matematiksel ortası olan 143. ayette (286 / 2 = 143) \"Sizi vasat / orta bir ümmet kıldık\" ifadesinin geçmesi yapısal edebiyat teorisinde bir başyapıt olarak kabul edilir."
+    }
+  },
+  "phonetics_and_acoustics": {
+    "title": "Fonetik ve Akustik Dalga Armonisi (Fâsıla Harfleri Dağılımı)",
+    "total_verses": 6236,
+    "top_fawasil": [
+      {
+        "letter": "ن",
+        "count": 3124,
+        "percentage": 50.1
+      },
+      {
+        "letter": "ا",
+        "count": 949,
+        "percentage": 15.22
+      },
+      {
+        "letter": "م",
+        "count": 665,
+        "percentage": 10.66
+      },
+      {
+        "letter": "ر",
+        "count": 450,
+        "percentage": 7.22
+      },
+      {
+        "letter": "ي",
+        "count": 267,
+        "percentage": 4.28
+      },
+      {
+        "letter": "د",
+        "count": 198,
+        "percentage": 3.18
+      },
+      {
+        "letter": "ه",
+        "count": 171,
+        "percentage": 2.74
+      },
+      {
+        "letter": "ب",
+        "count": 162,
+        "percentage": 2.6
+      },
+      {
+        "letter": "ل",
+        "count": 67,
+        "percentage": 1.07
+      },
+      {
+        "letter": "ق",
+        "count": 41,
+        "percentage": 0.66
+      }
+    ],
+    "top_4_dominance": "İlk 4 Harf (Nun, Elif, Mim, Ra) Toplamı: 5,188 kez (%83.19)",
+    "nun_dominance": "Sadece 'Nûn' [ن] Harfi: 3,124 kez (%50.10) - Tüm ayetlerin yarısından fazlası!",
+    "acoustic_significance": "Ayet sonu fâsılalarında Nûn ve Mîm gibi Gunne (geniz) sesleri ile Medd (uzatma) seslerinin %80'in üzerinde baskın olması, Kur'an tilavetine derin bir meditatif armoni, nefes ritmi ve akustik ses dalgası kazandırır."
+  },
+  "proportional_golden_ratio": {
+    "title": "Orantısal Sabitler ve Altın Oran (φ = 1.618)",
+    "theoretical_phi": 1.618,
+    "geographic_kaba_ratio": 1.6248,
+    "textual_ayah_3_96_ratio": 1.6207,
+    "diff_from_phi_percent": 0.16,
+    "evaluation": "Kâbe'nin Dünya üzerindeki enlem oranı (1.6248) ve Kur'an'da Mekke isminin geçtiği yegâne ayet olan Âl-i İmrân 3:96'daki harf oranı (47 / 29 = 1.6207), doğadaki Altın Oran'a (φ = 1.6180) %0.15 hata payıyla tam bir yakınsama sergiler."
+  },
+  "structural_repetitions": {
+    "title": "Düzensel Tekrar ve Ritim Matrisleri (Yapısal Nakaratlar)",
+    "refrains": [
+      {
+        "surah": "55. Rahmân Suresi",
+        "refrain": "فَبِأَيِّ آلَاءِ رَبِّكُمَا تُكَذِّبَانِ",
+        "meaning": "Şimdi Rabbinizin hangi nimetlerini yalanlayabilirsiniz?",
+        "count": 31,
+        "structure": "31 tekrar 4 tematik bloğa ayrılır: Dünya Nimetleri (8), Kıyamet Sahnesi (7), Cehennem Uyarısı (8), İki Cennet Tasviri (8)."
+      },
+      {
+        "surah": "77. Mürselât Suresi",
+        "refrain": "وَيْلٌ يَوْمَئِذٍ لِلْمُكَذِّبِينَ",
+        "meaning": "O gün yalanlayanların vay haline!",
+        "count": 10,
+        "structure": "10 defa tekrarlanarak kıyamet günü inkarcıların çaresizliğini ritmik olarak perçinler."
+      },
+      {
+        "surah": "26. Şuarâ Suresi",
+        "refrain": "إِنَّ فِي ذَٰلِكَ لَآيَةً ۖ وَمَا كَانَ أَكْثَرُهُمْ مُؤْمِنِينَ * وَإِنَّ رَبَّكَ لَهُوَ الْعَزِيزُ الرَّحِيمُ",
+        "meaning": "Şüphesiz bunda bir ibret vardır... Ve şüphesiz Rabbin, mutlak güç ve merhamet sahibidir.",
+        "count": 8,
+        "structure": "8 peygamber kıssasının (Musa, İbrahim, Nuh, Hud, Salih, Lut, Şuayb) sonunda düzenli nakarat."
+      },
+      {
+        "surah": "54. Kamer Suresi",
+        "refrain": "وَلَقَدْ يَسَّرْنَا الْقُرْآنَ لِلذِّكْرِ فَهَلْ مِنْ مُدَّكِرٍ",
+        "meaning": "Andolsun Biz Kur'an'ı düşünüp öğüt almak için kolaylaştırdık; var mı öğüt alan?",
+        "count": 4,
+        "structure": "Nuh, Âd, Semûd ve Lût kavimlerinin helak kıssalarının her birinin ardında 4 kez tekrarlanır."
+      }
+    ]
+  }
+}

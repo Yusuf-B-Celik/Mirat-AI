@@ -1,7 +1,7 @@
 # MİRAT: Kur'an-ı Kerim'de Zıt ve Eş Anlamlı Kelimelerin Çoklu Kural Analiz Raporu
 ## Tıbâk (Zıtlık), Mürâdif (Eş Anlamlılık) ve Harmonik Oranların İleri Düzey Matematiksel Modellenmesi
 
-> **Tarih:** 23.08.2026 | **Proje:** MİRAT Bilimsel Araştırma Grubu | **Veri Tabanı:** 130.030 Segment, 77.429 Kelime, 1.651 Kök
+> **Tarih:** 19.09.2026 | **Proje:** MİRAT Bilimsel Araştırma Grubu | **Veri Tabanı:** 130.030 Segment, 77.429 Kelime, 1.651 Kök
 
 ---
 
