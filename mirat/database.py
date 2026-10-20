@@ -221,6 +221,7 @@ class MiratDB:
         self.db_path = db_path if db_path is not None else get_db_path()
         if not os.path.exists(self.db_path):
             init_db()
+        self.init_annotation_tables()
 
     @contextmanager
     def get_connection(self):
@@ -230,6 +231,83 @@ class MiratDB:
             yield conn
         finally:
             conn.close()
+
+    def init_annotation_tables(self):
+        with self.get_connection() as conn:
+            c = conn.cursor()
+            c.executescript("""
+            CREATE TABLE IF NOT EXISTS ayah_annotations (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                surah INTEGER,
+                ayah INTEGER,
+                model TEXT,
+                themes TEXT,
+                speech_act TEXT,
+                sentiment REAL,
+                addressee TEXT,
+                created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+            );
+            CREATE INDEX IF NOT EXISTS idx_ann_surah_ayah ON ayah_annotations(surah, ayah);
+            CREATE INDEX IF NOT EXISTS idx_ann_model ON ayah_annotations(model);
+
+            CREATE TABLE IF NOT EXISTS ayah_consensus (
+                surah INTEGER,
+                ayah INTEGER,
+                consensus_themes TEXT,
+                agreement_score REAL,
+                speech_act TEXT,
+                sentiment REAL,
+                PRIMARY KEY (surah, ayah)
+            );
+
+            CREATE TABLE IF NOT EXISTS entities (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                surah INTEGER,
+                ayah INTEGER,
+                entity_type TEXT,
+                entity_name TEXT,
+                model TEXT
+            );
+            CREATE INDEX IF NOT EXISTS idx_ent_name ON entities(entity_name);
+            CREATE INDEX IF NOT EXISTS idx_ent_surah_ayah ON entities(surah, ayah);
+            """)
+            conn.commit()
+
+    def save_ayah_annotation(self, surah, ayah, model, themes, speech_act="", sentiment=0.0, addressee=""):
+        themes_str = json.dumps(themes, ensure_ascii=False) if isinstance(themes, list) else str(themes)
+        with self.get_connection() as conn:
+            c = conn.cursor()
+            c.execute("""
+            INSERT INTO ayah_annotations (surah, ayah, model, themes, speech_act, sentiment, addressee)
+            VALUES (?, ?, ?, ?, ?, ?, ?)
+            """, (surah, ayah, model, themes_str, speech_act, sentiment, addressee))
+            conn.commit()
+
+    def save_consensus_annotation(self, surah, ayah, consensus_themes, agreement_score=1.0, speech_act="", sentiment=0.0):
+        themes_str = json.dumps(consensus_themes, ensure_ascii=False) if isinstance(consensus_themes, list) else str(consensus_themes)
+        with self.get_connection() as conn:
+            c = conn.cursor()
+            c.execute("""
+            INSERT OR REPLACE INTO ayah_consensus (surah, ayah, consensus_themes, agreement_score, speech_act, sentiment)
+            VALUES (?, ?, ?, ?, ?, ?)
+            """, (surah, ayah, themes_str, agreement_score, speech_act, sentiment))
+            conn.commit()
+
+    def save_entity(self, surah, ayah, entity_type, entity_name, model="consensus"):
+        with self.get_connection() as conn:
+            c = conn.cursor()
+            c.execute("""
+            INSERT INTO entities (surah, ayah, entity_type, entity_name, model)
+            VALUES (?, ?, ?, ?, ?)
+            """, (surah, ayah, entity_type, entity_name, model))
+            conn.commit()
+
+    def get_ayah_text(self, surah, ayah):
+        with self.get_connection() as conn:
+            c = conn.cursor()
+            c.execute("SELECT arabic_text FROM words WHERE surah = ? AND ayah = ? ORDER BY word", (surah, ayah))
+            words = [r[0] for r in c.fetchall() if r[0]]
+            return " ".join(words)
 
     def search_root(self, root):
         with self.get_connection() as conn:

@@ -24,3 +24,19 @@ kuran/*.html
 # OS Files
 .DS_Store
 Thumbs.db
+
+# Environment variables & secrets
+.env
+*.env
+
+# LLM cache and usage databases
+veriler/llm_cache.db*
+veriler/llm_usage.db*
+veriler/preregistration.jsonl
+
+# Node & Next.js web app
+site/node_modules/
+site/.next/
+site/out/
+node_modules/
+
