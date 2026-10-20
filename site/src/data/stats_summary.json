@@ -1,0 +1,18 @@
+{
+  "words_count": 77429,
+  "segments_count": 130030,
+  "surahs_count": 114,
+  "verses_count": 6236,
+  "discovery_categories": 9,
+  "total_findings": 219,
+  "significant_findings": 102,
+  "honest_null_findings": 75,
+  "unit_tests_count": 52,
+  "unit_tests_pass_rate": 100,
+  "llm_consensus_kappa_antonyms": 0.88,
+  "llm_consensus_kappa_fields": 0.75,
+  "llm_consensus_models": [
+    "DeepSeek-V4.1-Flash",
+    "Qwen-3.7-Plus"
+  ]
+}

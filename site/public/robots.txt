@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mirat-ai.vercel.app/sitemap.xml
+

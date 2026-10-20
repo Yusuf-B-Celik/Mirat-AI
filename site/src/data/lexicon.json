@@ -1,0 +1,299 @@
+{
+  "agreed_pairs": [
+    [
+      "أتي",
+      "منع"
+    ],
+    [
+      "أخر",
+      "أول"
+    ],
+    [
+      "أرض",
+      "سمو"
+    ],
+    [
+      "أمر",
+      "نهي"
+    ],
+    [
+      "أمن",
+      "كفر"
+    ],
+    [
+      "بطل",
+      "حقق"
+    ],
+    [
+      "بعد",
+      "قبل"
+    ],
+    [
+      "بعض",
+      "كلل"
+    ],
+    [
+      "جهل",
+      "علم"
+    ],
+    [
+      "جيأ",
+      "ذهب"
+    ],
+    [
+      "ذكر",
+      "نسي"
+    ],
+    [
+      "رأي",
+      "عمي"
+    ],
+    [
+      "ربب",
+      "عبد"
+    ],
+    [
+      "رحم",
+      "عذب"
+    ],
+    [
+      "سكت",
+      "قول"
+    ],
+    [
+      "صدق",
+      "كذب"
+    ],
+    [
+      "ضلل",
+      "هدي"
+    ],
+    [
+      "ظلم",
+      "عدل"
+    ],
+    [
+      "فجر",
+      "وقي"
+    ],
+    [
+      "ليل",
+      "يوم"
+    ]
+  ],
+  "kappa_field": 0.7534246575342466,
+  "kappa_has_antonym": 0.8809523809523808,
+  "models": [
+    "deepseek-v4.1-flash",
+    "qwen3.7-plus"
+  ],
+  "n_common": 40,
+  "n_labeled": {
+    "deepseek-v4.1-flash": 40,
+    "qwen3.7-plus": 40
+  },
+  "pairs_model_a": 24,
+  "pairs_model_b": 25,
+  "roots": {
+    "أتي": {
+      "field": "Ekonomi/Mal",
+      "field_agreed": true,
+      "gloss": "vermek"
+    },
+    "أخذ": {
+      "field": "Ekonomi/Mal",
+      "field_agreed": true,
+      "gloss": "almak"
+    },
+    "أخر": {
+      "field": "Zaman",
+      "field_agreed": true,
+      "gloss": "son, sonraki"
+    },
+    "أرض": {
+      "field": "Doğa/Kozmos",
+      "field_agreed": true,
+      "gloss": "yeryüzü, toprak"
+    },
+    "أله": {
+      "field": "İnanç/Tanrı",
+      "field_agreed": true,
+      "gloss": "Allah, ilah"
+    },
+    "أمر": {
+      "field": "Hukuk/Toplum",
+      "field_agreed": true,
+      "gloss": "emir, buyruk"
+    },
+    "أمن": {
+      "field": "İnanç/Tanrı",
+      "field_agreed": true,
+      "gloss": "iman etmek, güvenmek"
+    },
+    "أنس": {
+      "field": "Hukuk/Toplum",
+      "field_agreed": false,
+      "gloss": "insanlar"
+    },
+    "أيي": {
+      "field": "Peygamberlik/Vahiy",
+      "field_agreed": true,
+      "gloss": "ayet, işaret"
+    },
+    "بعد": {
+      "field": "Zaman",
+      "field_agreed": true,
+      "gloss": "sonra"
+    },
+    "بين": {
+      "field": "Diğer/Dilbilgisel",
+      "field_agreed": true,
+      "gloss": "arasında, arası"
+    },
+    "جعل": {
+      "field": "Yaratılış/Hayat-Ölüm",
+      "field_agreed": false,
+      "gloss": "yapmak, kılmak"
+    },
+    "جيأ": {
+      "field": "Hareket/Mekân",
+      "field_agreed": true,
+      "gloss": "gelmek"
+    },
+    "حقق": {
+      "field": "Bilgi/Akıl",
+      "field_agreed": false,
+      "gloss": "hak, gerçek"
+    },
+    "خلق": {
+      "field": "Yaratılış/Hayat-Ölüm",
+      "field_agreed": true,
+      "gloss": "yaratmak"
+    },
+    "ذكر": {
+      "field": "Bilgi/Akıl",
+      "field_agreed": false,
+      "gloss": "anmak, hatırlamak"
+    },
+    "رأي": {
+      "field": "Bilgi/Akıl",
+      "field_agreed": true,
+      "gloss": "görmek"
+    },
+    "ربب": {
+      "field": "İnanç/Tanrı",
+      "field_agreed": true,
+      "gloss": "Rab, efendi"
+    },
+    "رحم": {
+      "field": "İnanç/Tanrı",
+      "field_agreed": false,
+      "gloss": "merhametli, esirgeyen"
+    },
+    "رسل": {
+      "field": "Peygamberlik/Vahiy",
+      "field_agreed": true,
+      "gloss": "elçi, peygamber"
+    },
+    "سمو": {
+      "field": "Doğa/Kozmos",
+      "field_agreed": true,
+      "gloss": "gök"
+    },
+    "شيأ": {
+      "field": "Diğer/Dilbilgisel",
+      "field_agreed": true,
+      "gloss": "şey"
+    },
+    "ظلم": {
+      "field": "Günah/Kötülük",
+      "field_agreed": false,
+      "gloss": "zulmetmek, haksızlık"
+    },
+    "عبد": {
+      "field": "İbadet",
+      "field_agreed": false,
+      "gloss": "kul, köle"
+    },
+    "عذب": {
+      "field": "Ahiret",
+      "field_agreed": true,
+      "gloss": "azap, ceza"
+    },
+    "علم": {
+      "field": "Bilgi/Akıl",
+      "field_agreed": true,
+      "gloss": "bilmek"
+    },
+    "عمل": {
+      "field": "Erdem/İyilik",
+      "field_agreed": false,
+      "gloss": "yapmak, işlemek"
+    },
+    "قبل": {
+      "field": "Zaman",
+      "field_agreed": true,
+      "gloss": "önce"
+    },
+    "قول": {
+      "field": "Konuşma/İletişim",
+      "field_agreed": true,
+      "gloss": "söylemek, demek"
+    },
+    "قوم": {
+      "field": "Hukuk/Toplum",
+      "field_agreed": true,
+      "gloss": "kavim, topluluk"
+    },
+    "كتب": {
+      "field": "Peygamberlik/Vahiy",
+      "field_agreed": true,
+      "gloss": "kitap, yazı"
+    },
+    "كذب": {
+      "field": "Konuşma/İletişim",
+      "field_agreed": true,
+      "gloss": "yalanlamak"
+    },
+    "كفر": {
+      "field": "İnanç/Tanrı",
+      "field_agreed": true,
+      "gloss": "inkâr etmek, küfretmek"
+    },
+    "كلل": {
+      "field": "Diğer/Dilbilgisel",
+      "field_agreed": true,
+      "gloss": "hepsi, tüm"
+    },
+    "كون": {
+      "field": "Diğer/Dilbilgisel",
+      "field_agreed": true,
+      "gloss": "olmak, var olmak"
+    },
+    "نزل": {
+      "field": "Peygamberlik/Vahiy",
+      "field_agreed": false,
+      "gloss": "indirmek"
+    },
+    "نفس": {
+      "field": "Yaratılış/Hayat-Ölüm",
+      "field_agreed": true,
+      "gloss": "nefis, can, kendilik"
+    },
+    "هدي": {
+      "field": "İnanç/Tanrı",
+      "field_agreed": true,
+      "gloss": "hidayet etmek, yol göstermek"
+    },
+    "وقي": {
+      "field": "Erdem/İyilik",
+      "field_agreed": true,
+      "gloss": "sakınmak, takva"
+    },
+    "يوم": {
+      "field": "Zaman",
+      "field_agreed": true,
+      "gloss": "gün"
+    }
+  }
+}

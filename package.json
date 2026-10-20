@@ -1,0 +1,22 @@
+{
+  "name": "mirat-ai",
+  "version": "6.0.0",
+  "description": "MİRAT (Metin İçi Rastlantısallık ve Analiz Teknolojisi) v6.0",
+  "private": true,
+  "scripts": {
+    "build": "cd site && npm install && npm run build",
+    "export-data": "python3 scripts/export_site_data.py",
+    "dev": "cd site && npm run dev",
+    "start": "cd site && npx serve out -l 3000"
+  },
+  "keywords": [
+    "quran-text-mining",
+    "natural-language-processing",
+    "computational-linguistics",
+    "null-models",
+    "reproducible-science"
+  ],
+  "author": "MİRAT Araştırma Ekibi",
+  "license": "MIT"
+}
+

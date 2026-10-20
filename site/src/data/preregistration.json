@@ -1,0 +1,379 @@
+{
+  "records": [
+    {
+      "timestamp": "2026-10-04T07:41:56.425820Z",
+      "prev_hash": "GENESIS_MIRAT_V5_HASH",
+      "model_name": "gpt-6-luna",
+      "hypothesis": "Test hipotezi: Hakikat vs Batıl simetrisi",
+      "target_roots": [
+        "حقق",
+        "بطل"
+      ],
+      "expected_relation": "equal_frequency",
+      "hash": "e2b3fc09653aa31bcbece3b1acad18dcf61dbfecaaa8a34e75bd7f4e35477c5c"
+    },
+    {
+      "timestamp": "2026-10-04T07:41:56.425996Z",
+      "prev_hash": "e2b3fc09653aa31bcbece3b1acad18dcf61dbfecaaa8a34e75bd7f4e35477c5c",
+      "model_name": "deepseek-v4.1-flash",
+      "hypothesis": "İkinci test: Sabır vs Şükür",
+      "target_roots": [
+        "صبر",
+        "شكر"
+      ],
+      "expected_relation": "positive_correlation",
+      "hash": "3f41e44a80955d9ab27b4686375f47c0f765dcd4761949be1cfca03e14892f11"
+    },
+    {
+      "timestamp": "2026-10-04T07:42:19.656599+00:00",
+      "prev_hash": "3f41e44a80955d9ab27b4686375f47c0f765dcd4761949be1cfca03e14892f11",
+      "model_name": "gpt-6-luna",
+      "hypothesis": "Test hipotezi: Hakikat vs Batıl simetrisi",
+      "target_roots": [
+        "حقق",
+        "بطل"
+      ],
+      "expected_relation": "equal_frequency",
+      "hash": "1eda96ba40936509c2f2020661ac5bfae93a1a797f43a26438cf0876e452e1b8"
+    },
+    {
+      "timestamp": "2026-10-04T07:42:19.656739+00:00",
+      "prev_hash": "1eda96ba40936509c2f2020661ac5bfae93a1a797f43a26438cf0876e452e1b8",
+      "model_name": "deepseek-v4.1-flash",
+      "hypothesis": "İkinci test: Sabır vs Şükür",
+      "target_roots": [
+        "صبر",
+        "شكر"
+      ],
+      "expected_relation": "positive_correlation",
+      "hash": "5fa235e2dd4bd131fc5d6f487dbcec31df795f6e638efa546c7846755d780bb0"
+    },
+    {
+      "timestamp": "2026-10-04T07:44:31.766797+00:00",
+      "prev_hash": "5fa235e2dd4bd131fc5d6f487dbcec31df795f6e638efa546c7846755d780bb0",
+      "model_name": "mirat-autonomous-agent",
+      "hypothesis": "Günahta ısrar ile bağışlanma arayışı arasındaki manevi denge",
+      "target_roots": [
+        "صرر",
+        "غفر"
+      ],
+      "expected_relation": "exact_parity",
+      "hash": "51c88e47e31d1b9e37db71fc123268d1f1ec7733ed2b72cfae02c9d08bbd6b3a"
+    },
+    {
+      "timestamp": "2026-10-04T07:44:31.768686+00:00",
+      "prev_hash": "51c88e47e31d1b9e37db71fc123268d1f1ec7733ed2b72cfae02c9d08bbd6b3a",
+      "model_name": "mirat-autonomous-agent",
+      "hypothesis": "Ahlaki dürüstlük ile yalan arasındaki temel çatışma",
+      "target_roots": [
+        "صدق",
+        "كذب"
+      ],
+      "expected_relation": "exact_parity",
+      "hash": "6b3aba56036436b7570394451334ac7f94e8f779b66eb181da0d60532e3a3fc6"
+    },
+    {
+      "timestamp": "2026-10-04T07:45:05.483264+00:00",
+      "prev_hash": "6b3aba56036436b7570394451334ac7f94e8f779b66eb181da0d60532e3a3fc6",
+      "model_name": "gpt-6-luna",
+      "hypothesis": "Test hipotezi: Hakikat vs Batıl simetrisi",
+      "target_roots": [
+        "حقق",
+        "بطل"
+      ],
+      "expected_relation": "equal_frequency",
+      "hash": "baf533e2f84740ee7159897643abb4ed17837c16cfea185bee2271fcb3a9ecd7"
+    },
+    {
+      "timestamp": "2026-10-04T07:45:05.483375+00:00",
+      "prev_hash": "baf533e2f84740ee7159897643abb4ed17837c16cfea185bee2271fcb3a9ecd7",
+      "model_name": "deepseek-v4.1-flash",
+      "hypothesis": "İkinci test: Sabır vs Şükür",
+      "target_roots": [
+        "صبر",
+        "شكر"
+      ],
+      "expected_relation": "positive_correlation",
+      "hash": "6b67a282989b95c912c5b0461438ba09b80c2c434bb4f282fde063f0c8c2da8f"
+    },
+    {
+      "timestamp": "2026-10-04T07:46:43.205099+00:00",
+      "prev_hash": "6b67a282989b95c912c5b0461438ba09b80c2c434bb4f282fde063f0c8c2da8f",
+      "model_name": "mirat-autonomous-agent",
+      "hypothesis": "Günahta ısrar ile bağışlanma arayışı arasındaki manevi denge",
+      "target_roots": [
+        "صرر",
+        "غفر"
+      ],
+      "expected_relation": "exact_parity",
+      "hash": "60dc94919db269328d62b63e4fec0c253d3b63645d41c6bd2cdc47f9e696d6eb"
+    },
+    {
+      "timestamp": "2026-10-04T07:46:43.207739+00:00",
+      "prev_hash": "60dc94919db269328d62b63e4fec0c253d3b63645d41c6bd2cdc47f9e696d6eb",
+      "model_name": "mirat-autonomous-agent",
+      "hypothesis": "Ahlaki dürüstlük ile yalan arasındaki temel çatışma",
+      "target_roots": [
+        "صدق",
+        "كذب"
+      ],
+      "expected_relation": "exact_parity",
+      "hash": "da19d5aa6e9237a050e977c68025458d11c008c547774ba5fb7cc3a31cf5be6d"
+    },
+    {
+      "timestamp": "2026-10-04T07:46:54.416739+00:00",
+      "prev_hash": "da19d5aa6e9237a050e977c68025458d11c008c547774ba5fb7cc3a31cf5be6d",
+      "model_name": "gpt-6-luna",
+      "hypothesis": "Test hipotezi: Hakikat vs Batıl simetrisi",
+      "target_roots": [
+        "حقق",
+        "بطل"
+      ],
+      "expected_relation": "equal_frequency",
+      "hash": "68754cefae581dd8467aedcca256da7b0af5bbf70a7ed66b849ae582f93758ec"
+    },
+    {
+      "timestamp": "2026-10-04T07:46:54.416860+00:00",
+      "prev_hash": "68754cefae581dd8467aedcca256da7b0af5bbf70a7ed66b849ae582f93758ec",
+      "model_name": "deepseek-v4.1-flash",
+      "hypothesis": "İkinci test: Sabır vs Şükür",
+      "target_roots": [
+        "صبر",
+        "شكر"
+      ],
+      "expected_relation": "positive_correlation",
+      "hash": "4c122f94182a48f861a53ff83d5fdc58ea024ec9950c46e5b2f10ac620ffd293"
+    },
+    {
+      "timestamp": "2026-10-04T07:46:54.687165+00:00",
+      "prev_hash": "4c122f94182a48f861a53ff83d5fdc58ea024ec9950c46e5b2f10ac620ffd293",
+      "model_name": "mirat-autonomous-agent",
+      "hypothesis": "Günahta ısrar ile bağışlanma arayışı arasındaki manevi denge",
+      "target_roots": [
+        "صرر",
+        "غفر"
+      ],
+      "expected_relation": "exact_parity",
+      "hash": "0ca0e0986e7ef7b917ad69c108ea5f5f7c9881c5c98d9786405ec4aa6d39f2c5"
+    },
+    {
+      "timestamp": "2026-10-04T07:46:54.689464+00:00",
+      "prev_hash": "0ca0e0986e7ef7b917ad69c108ea5f5f7c9881c5c98d9786405ec4aa6d39f2c5",
+      "model_name": "mirat-autonomous-agent",
+      "hypothesis": "Ahlaki dürüstlük ile yalan arasındaki temel çatışma",
+      "target_roots": [
+        "صدق",
+        "كذب"
+      ],
+      "expected_relation": "exact_parity",
+      "hash": "77779f1680033f08c77a65f46ebdee2093b1760abf0b6df0e911469f45049185"
+    },
+    {
+      "timestamp": "2026-10-04T07:47:13.265941+00:00",
+      "prev_hash": "77779f1680033f08c77a65f46ebdee2093b1760abf0b6df0e911469f45049185",
+      "model_name": "gpt-6-luna",
+      "hypothesis": "Test hipotezi: Hakikat vs Batıl simetrisi",
+      "target_roots": [
+        "حقق",
+        "بطل"
+      ],
+      "expected_relation": "equal_frequency",
+      "hash": "95ade000ca6ddf4cef7ae3c14079e2572b21424f549b59861a72d63824223fb0"
+    },
+    {
+      "timestamp": "2026-10-04T07:47:13.266079+00:00",
+      "prev_hash": "95ade000ca6ddf4cef7ae3c14079e2572b21424f549b59861a72d63824223fb0",
+      "model_name": "deepseek-v4.1-flash",
+      "hypothesis": "İkinci test: Sabır vs Şükür",
+      "target_roots": [
+        "صبر",
+        "شكر"
+      ],
+      "expected_relation": "positive_correlation",
+      "hash": "b881fc9b59af40f06c303d54c23ade1710f0ab4de89d532c4dcb22bd5f2530b9"
+    },
+    {
+      "timestamp": "2026-10-04T07:47:13.527678+00:00",
+      "prev_hash": "b881fc9b59af40f06c303d54c23ade1710f0ab4de89d532c4dcb22bd5f2530b9",
+      "model_name": "mirat-autonomous-agent",
+      "hypothesis": "Günahta ısrar ile bağışlanma arayışı arasındaki manevi denge",
+      "target_roots": [
+        "صرر",
+        "غفر"
+      ],
+      "expected_relation": "exact_parity",
+      "hash": "00e72057c2194b1fa015c6811c6e4b37341035e00875c76aadd17bf48be702b8"
+    },
+    {
+      "timestamp": "2026-10-04T07:47:13.529653+00:00",
+      "prev_hash": "00e72057c2194b1fa015c6811c6e4b37341035e00875c76aadd17bf48be702b8",
+      "model_name": "mirat-autonomous-agent",
+      "hypothesis": "Ahlaki dürüstlük ile yalan arasındaki temel çatışma",
+      "target_roots": [
+        "صدق",
+        "كذب"
+      ],
+      "expected_relation": "exact_parity",
+      "hash": "3992a938608df2cfba24cfca2c7d775a980e68bd0684c2cba46eaa735252b4bc"
+    },
+    {
+      "timestamp": "2026-10-04T08:35:34.658177+00:00",
+      "prev_hash": "3992a938608df2cfba24cfca2c7d775a980e68bd0684c2cba46eaa735252b4bc",
+      "model_name": "gpt-6-luna",
+      "hypothesis": "Test hipotezi: Hakikat vs Batıl simetrisi",
+      "target_roots": [
+        "حقق",
+        "بطل"
+      ],
+      "expected_relation": "equal_frequency",
+      "hash": "12319c722d08271319fb914f75e1b4cfd8dd4041534923b753c05449e41635e3"
+    },
+    {
+      "timestamp": "2026-10-04T08:35:34.658305+00:00",
+      "prev_hash": "12319c722d08271319fb914f75e1b4cfd8dd4041534923b753c05449e41635e3",
+      "model_name": "deepseek-v4.1-flash",
+      "hypothesis": "İkinci test: Sabır vs Şükür",
+      "target_roots": [
+        "صبر",
+        "شكر"
+      ],
+      "expected_relation": "positive_correlation",
+      "hash": "6596ae47e62713bf42086747926d79923212b1105d7dd1d39227eb2c13453469"
+    },
+    {
+      "timestamp": "2026-10-04T08:36:43.230467+00:00",
+      "prev_hash": "6596ae47e62713bf42086747926d79923212b1105d7dd1d39227eb2c13453469",
+      "model_name": "mirat-autonomous-agent",
+      "hypothesis": "Günahta ısrar ile bağışlanma arayışı arasındaki manevi denge",
+      "target_roots": [
+        "صرر",
+        "غفر"
+      ],
+      "expected_relation": "exact_parity",
+      "hash": "b1aaf1c980a199452c5b5c830116ecc85bef182d4bf831353a4c488b166dff78"
+    },
+    {
+      "timestamp": "2026-10-07T14:16:55.459273+00:00",
+      "prev_hash": "b1aaf1c980a199452c5b5c830116ecc85bef182d4bf831353a4c488b166dff78",
+      "model_name": "gpt-6-luna",
+      "hypothesis": "Test hipotezi: Hakikat vs Batıl simetrisi",
+      "target_roots": [
+        "حقق",
+        "بطل"
+      ],
+      "expected_relation": "equal_frequency",
+      "hash": "1e4d51a7ac3824c6de13ae3761879d61946dbedadfce3e49da6873f274148f0e"
+    },
+    {
+      "timestamp": "2026-10-07T14:16:55.459500+00:00",
+      "prev_hash": "1e4d51a7ac3824c6de13ae3761879d61946dbedadfce3e49da6873f274148f0e",
+      "model_name": "deepseek-v4.1-flash",
+      "hypothesis": "İkinci test: Sabır vs Şükür",
+      "target_roots": [
+        "صبر",
+        "شكر"
+      ],
+      "expected_relation": "positive_correlation",
+      "hash": "1d4c4d4b20753d603bd4ed3903f7b3b075e466ac415a7185fb318c6d8b75ef5b"
+    },
+    {
+      "timestamp": "2026-10-07T14:16:56.587079+00:00",
+      "prev_hash": "1d4c4d4b20753d603bd4ed3903f7b3b075e466ac415a7185fb318c6d8b75ef5b",
+      "model_name": "mirat-autonomous-agent",
+      "hypothesis": "Günahta ısrar ile bağışlanma arayışı arasındaki manevi denge",
+      "target_roots": [
+        "صرر",
+        "غفر"
+      ],
+      "expected_relation": "exact_parity",
+      "hash": "b2ee67ee4e86997c91e254ba6617f5a0c54fd3c3087dfe58fcba2908a039baa2"
+    },
+    {
+      "timestamp": "2026-10-13T19:06:52.358664+00:00",
+      "prev_hash": "b2ee67ee4e86997c91e254ba6617f5a0c54fd3c3087dfe58fcba2908a039baa2",
+      "model_name": "gpt-6-luna",
+      "hypothesis": "Test hipotezi: Hakikat vs Batıl simetrisi",
+      "target_roots": [
+        "حقق",
+        "بطل"
+      ],
+      "expected_relation": "equal_frequency",
+      "hash": "b4a5b8a54b7aa5464110aaaa261658a88576cd15f5f15d32cf5fa3ee7da2606c"
+    },
+    {
+      "timestamp": "2026-10-13T19:06:52.358775+00:00",
+      "prev_hash": "b4a5b8a54b7aa5464110aaaa261658a88576cd15f5f15d32cf5fa3ee7da2606c",
+      "model_name": "deepseek-v4.1-flash",
+      "hypothesis": "İkinci test: Sabır vs Şükür",
+      "target_roots": [
+        "صبر",
+        "شكر"
+      ],
+      "expected_relation": "positive_correlation",
+      "hash": "bda8608f0e3ea771296bad8548ba54f2dc61d2d0650f676d5d857073431d3b50"
+    },
+    {
+      "timestamp": "2026-10-13T19:06:52.568867+00:00",
+      "prev_hash": "bda8608f0e3ea771296bad8548ba54f2dc61d2d0650f676d5d857073431d3b50",
+      "model_name": "mirat-autonomous-agent",
+      "hypothesis": "Günahta ısrar ile bağışlanma arayışı arasındaki manevi denge",
+      "target_roots": [
+        "صرر",
+        "غفر"
+      ],
+      "expected_relation": "exact_parity",
+      "hash": "557726a0d8481a47cc70e38ddddbe66b49041387567bf522a788fc1aecd9a5e0"
+    },
+    {
+      "timestamp": "2026-10-13T19:06:52.572538+00:00",
+      "prev_hash": "557726a0d8481a47cc70e38ddddbe66b49041387567bf522a788fc1aecd9a5e0",
+      "model_name": "mirat-autonomous-agent",
+      "hypothesis": "Ahlaki dürüstlük ile yalan arasındaki temel çatışma",
+      "target_roots": [
+        "صدق",
+        "كذب"
+      ],
+      "expected_relation": "exact_parity",
+      "hash": "468bc5246cbf8ac2590f825eb56c3da8f78ec1472516c4f038e4163887caadbc"
+    },
+    {
+      "timestamp": "2026-10-20T16:02:02.301625+00:00",
+      "prev_hash": "468bc5246cbf8ac2590f825eb56c3da8f78ec1472516c4f038e4163887caadbc",
+      "model_name": "gpt-6-luna",
+      "hypothesis": "Test hipotezi: Hakikat vs Batıl simetrisi",
+      "target_roots": [
+        "حقق",
+        "بطل"
+      ],
+      "expected_relation": "equal_frequency",
+      "hash": "67c6447e3e1f5c7dbf25ff88713dc378a960959e67e914a0487fba53ae575ae4"
+    },
+    {
+      "timestamp": "2026-10-20T16:02:02.301737+00:00",
+      "prev_hash": "67c6447e3e1f5c7dbf25ff88713dc378a960959e67e914a0487fba53ae575ae4",
+      "model_name": "deepseek-v4.1-flash",
+      "hypothesis": "İkinci test: Sabır vs Şükür",
+      "target_roots": [
+        "صبر",
+        "شكر"
+      ],
+      "expected_relation": "positive_correlation",
+      "hash": "bdad3f2f28b1da494380286fb0b0a1f3132214a1933051dc8aec6d1adc8b7d38"
+    },
+    {
+      "timestamp": "2026-10-20T16:02:03.238463+00:00",
+      "prev_hash": "bdad3f2f28b1da494380286fb0b0a1f3132214a1933051dc8aec6d1adc8b7d38",
+      "model_name": "mirat-autonomous-agent",
+      "hypothesis": "Günahta ısrar ile bağışlanma arayışı arasındaki manevi denge",
+      "target_roots": [
+        "صرر",
+        "غفر"
+      ],
+      "expected_relation": "exact_parity",
+      "hash": "78b3f2c44a20d398c91c4fb803a1726df6992e2001c005d8a4c38a8dae84619b"
+    }
+  ],
+  "total_records": 31,
+  "chain_valid": true,
+  "chain_status": "Bütünlük doğrulandı"
+}
