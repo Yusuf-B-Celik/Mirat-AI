@@ -1,0 +1,202 @@
+{
+"أتي": {
+"antonym": "منع",
+"field": "Ekonomi/Mal",
+"gloss": "vermek"
+},
+"أخذ": {
+"antonym": "عطو",
+"field": "Ekonomi/Mal",
+"gloss": "almak"
+},
+"أخر": {
+"antonym": "أول",
+"field": "Zaman",
+"gloss": "son, sonraki"
+},
+"أرض": {
+"antonym": "سمو",
+"field": "Doğa/Kozmos",
+"gloss": "yeryüzü, toprak"
+},
+"أله": {
+"antonym": null,
+"field": "İnanç/Tanrı",
+"gloss": "Allah, ilah"
+},
+"أمر": {
+"antonym": "نهي",
+"field": "Hukuk/Toplum",
+"gloss": "emir, buyruk"
+},
+"أمن": {
+"antonym": "كفر",
+"field": "İnanç/Tanrı",
+"gloss": "iman etmek, güvenmek"
+},
+"أنس": {
+"antonym": null,
+"field": "Hukuk/Toplum",
+"gloss": "insanlar"
+},
+"أيي": {
+"antonym": null,
+"field": "Peygamberlik/Vahiy",
+"gloss": "ayet, işaret"
+},
+"بعد": {
+"antonym": "قبل",
+"field": "Zaman",
+"gloss": "sonra"
+},
+"بين": {
+"antonym": null,
+"field": "Diğer/Dilbilgisel",
+"gloss": "arasında, arası"
+},
+"جعل": {
+"antonym": null,
+"field": "Yaratılış/Hayat-Ölüm",
+"gloss": "yapmak, kılmak"
+},
+"جيأ": {
+"antonym": "ذهب",
+"field": "Hareket/Mekân",
+"gloss": "gelmek"
+},
+"حقق": {
+"antonym": "بطل",
+"field": "Bilgi/Akıl",
+"gloss": "hak, gerçek"
+},
+"خلق": {
+"antonym": null,
+"field": "Yaratılış/Hayat-Ölüm",
+"gloss": "yaratmak"
+},
+"ذكر": {
+"antonym": "نسي",
+"field": "Bilgi/Akıl",
+"gloss": "anmak, hatırlamak"
+},
+"رأي": {
+"antonym": "عمي",
+"field": "Bilgi/Akıl",
+"gloss": "görmek"
+},
+"ربب": {
+"antonym": "عبد",
+"field": "İnanç/Tanrı",
+"gloss": "Rab, efendi"
+},
+"رحم": {
+"antonym": "عذب",
+"field": "İnanç/Tanrı",
+"gloss": "merhametli, esirgeyen"
+},
+"رسل": {
+"antonym": null,
+"field": "Peygamberlik/Vahiy",
+"gloss": "elçi, peygamber"
+},
+"سمو": {
+"antonym": "أرض",
+"field": "Doğa/Kozmos",
+"gloss": "gök"
+},
+"شيأ": {
+"antonym": null,
+"field": "Diğer/Dilbilgisel",
+"gloss": "şey"
+},
+"ظلم": {
+"antonym": "عدل",
+"field": "Günah/Kötülük",
+"gloss": "zulmetmek, haksızlık"
+},
+"عبد": {
+"antonym": "ربب",
+"field": "İbadet",
+"gloss": "kul, köle"
+},
+"عذب": {
+"antonym": "نعم",
+"field": "Ahiret",
+"gloss": "azap, ceza"
+},
+"علم": {
+"antonym": "جهل",
+"field": "Bilgi/Akıl",
+"gloss": "bilmek"
+},
+"عمل": {
+"antonym": "ترك",
+"field": "Erdem/İyilik",
+"gloss": "yapmak, işlemek"
+},
+"قبل": {
+"antonym": "بعد",
+"field": "Zaman",
+"gloss": "önce"
+},
+"قول": {
+"antonym": "سكت",
+"field": "Konuşma/İletişim",
+"gloss": "söylemek, demek"
+},
+"قوم": {
+"antonym": null,
+"field": "Hukuk/Toplum",
+"gloss": "kavim, topluluk"
+},
+"كتب": {
+"antonym": null,
+"field": "Peygamberlik/Vahiy",
+"gloss": "kitap, yazı"
+},
+"كذب": {
+"antonym": "صدق",
+"field": "Konuşma/İletişim",
+"gloss": "yalanlamak"
+},
+"كفر": {
+"antonym": "أمن",
+"field": "İnanç/Tanrı",
+"gloss": "inkâr etmek, küfretmek"
+},
+"كلل": {
+"antonym": "بعض",
+"field": "Diğer/Dilbilgisel",
+"gloss": "hepsi, tüm"
+},
+"كون": {
+"antonym": null,
+"field": "Diğer/Dilbilgisel",
+"gloss": "olmak, var olmak"
+},
+"نزل": {
+"antonym": "رفع",
+"field": "Peygamberlik/Vahiy",
+"gloss": "indirmek"
+},
+"نفس": {
+"antonym": null,
+"field": "Yaratılış/Hayat-Ölüm",
+"gloss": "nefis, can, kendilik"
+},
+"هدي": {
+"antonym": "ضلل",
+"field": "İnanç/Tanrı",
+"gloss": "hidayet etmek, yol göstermek"
+},
+"وقي": {
+"antonym": "فجر",
+"field": "Erdem/İyilik",
+"gloss": "sakınmak, takva"
+},
+"يوم": {
+"antonym": "ليل",
+"field": "Zaman",
+"gloss": "gün"
+}
+}
